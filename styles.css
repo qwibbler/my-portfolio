@@ -91,7 +91,7 @@ body {
 
 #menu li {
   margin: 5px;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -115,7 +115,7 @@ body {
 
 .main-page h1 {
   padding: 24px;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -128,7 +128,7 @@ body {
 
 .main-page p {
   padding: 24px;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
