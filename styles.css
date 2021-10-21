@@ -1,0 +1,24 @@
+/* All document */
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+html {
+    /* scroll smoothly via more button */
+    scroll-behavior: smooth;
+    font-family: inter;
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    padding: 0%;
+}
