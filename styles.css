@@ -10,7 +10,6 @@ html {
   scroll-behavior: smooth;
 }
 
-@import url('https://fonts.google.com/specimen/Inter#standard-styles');
 body {
   font-family: 'Inter';
   margin: 0%;
