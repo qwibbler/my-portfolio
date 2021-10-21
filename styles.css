@@ -101,3 +101,50 @@ body{
     line-height: 44px;
     color: #3A4A42;
 }
+
+/* 
+    ***MAIN PAGE***
+*/
+
+.main-page {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 48px;
+    background-image: url(images/header-illsutration-mobile@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-page h1 {
+    padding: 24px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    color: #172B4D;
+}
+
+.main-page span {color: #36B37E;}
+
+.main-page p {
+    padding: 24px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #172B4D;
+}
+
+.nav-bar-bot {
+    display: flex;
+    width: 50vw;
+    justify-content: space-around;
+}
+
+#more {margin: 64px;}
