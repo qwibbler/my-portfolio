@@ -87,3 +87,17 @@ body{
     width: 100vw;
     height: 20vh;
 }
+
+#menu a {
+    text-decoration: none;
+}
+
+#menu li {
+    margin: 5px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    color: #3A4A42;
+}
