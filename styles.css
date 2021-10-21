@@ -45,7 +45,7 @@ body {
 }
 
 /* used https://isabelcastillo.com/pure-css-mobile-toggle-menu to guide */
-#menu, 
+#menu,
 #menu-bottom,
 #top-nav > input {
   display: none;
@@ -74,7 +74,7 @@ body {
   height: 80vh;
   margin-top: 48px;
   background-color: white;
-  border-radius: 0 0 50 50;
+  border-radius: 0 0 50px 50px;
   list-style: none;
 }
 
@@ -82,7 +82,7 @@ body {
   display: flex;
   position: fixed;
   bottom: 0;
-  background-color: ##e5e5e5;
+  background-color: #e5e5e5;
   width: 100vw;
   height: 20vh;
 }
