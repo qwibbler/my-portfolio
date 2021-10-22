@@ -140,6 +140,7 @@ body {
 
 .nav-bar-bot ul {
   list-style: none;
+  padding: 0;
   display: flex;
   width: 50vw;
   justify-content: space-around;
