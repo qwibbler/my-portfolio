@@ -147,9 +147,7 @@ body {
   justify-content: space-around;
 }
 
-#more {
-  margin-top: 64px;
-}
+#more { margin-top: 64px; }
 
 /*
     ***PROJECT PAGE***
@@ -180,7 +178,6 @@ body {
 
 .projects {
   display: grid;
-  /* grid-template: repeat(auto-fill, 1fr)/repeat(auto-fill, 1fr); */
   gap: 24px;
   margin: 26px;
 }
@@ -200,7 +197,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: calc(100% - 1px)px;
   height: 222px;
   background-color: white;
   border-radius: 8px;
@@ -230,7 +226,7 @@ body {
 
 .proj-text li {
   padding: 8px 12px;
-  background: #EBF0EE;
+  background: #ebf0ee;
   border-radius: 4px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -255,13 +251,13 @@ button {
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: #fff;
   margin-bottom: 24px;
 }
 
 button:hover {
   background-color: #36b37f;
-  box-shadow: 0 8 16 rgba(54, 179, 127, 0.24);
+  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 button:active {
@@ -319,7 +315,6 @@ button:active {
 
 .skill-cards {
   display: grid;
-  /* grid-template: repeat(auto-fill, 1fr)/repeat(auto-fill, 1fr); */
   gap: 24px;
   margin: 24px;
 }
@@ -341,7 +336,7 @@ button:active {
   background-color: white;
   padding: 16px;
   border-radius: 50%;
-  box-shadow: 0 16 24 rgba(37, 47, 137, 0.08);
+  box-shadow: 0px 16px 24px rgba(37, 47, 137, 0.08);
 }
 
 .skill-cards h4 {
@@ -369,7 +364,7 @@ button:active {
 .skill-cards li {
   padding: 12px;
   margin: 4px;
-  background: #ffffff;
+  background: #fff;
   border-radius: 8px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
