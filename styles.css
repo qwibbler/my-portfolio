@@ -146,7 +146,9 @@ body {
   justify-content: space-around;
 }
 
-#more { margin: 64px; }
+#more { 
+  margin-top: 64px;
+}
 
 /*
     ***PROJECT PAGE***
@@ -159,8 +161,8 @@ body {
 }
 
 .project-page header {
-  padding-top: 48px;
-  margin-bottom: 90px;
+  display: flex;
+  flex-direction: column;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -171,6 +173,10 @@ body {
   text-align: center;
   color: #172B4D;
 }
+
+.project-page > header > h3 { margin: 24px; }
+
+.project-page > header > img { margin-bottom: 62px; }
 
 .projects {
   display: grid;
