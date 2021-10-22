@@ -147,3 +147,46 @@ body {
 }
 
 #more { margin: 64px; }
+
+
+/*
+    ***PROJECT PAGE***
+*/
+
+.project-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-page header {
+  padding-top: 48px;
+  margin-bottom: 90px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #172B4D;
+}
+
+.projects {
+  display: grid;
+  grid-template: repeat(6, 1fr)/1fr;
+  row-gap: 24px;
+  margin: 26px;
+}
+
+.proj {
+  display: flex;
+  flex-direction: column;
+  width: 329px;
+  height: 476px;
+  margin: 12px;
+  background-image: url(images/Img\ Plaholder\ project.png);
+  background-repeat: no-repeat;
+  justify-content: flex-end;
+}
