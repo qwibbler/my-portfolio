@@ -39,6 +39,7 @@ body {
   position: fixed;
   left: 0;
   margin: 10px 24px;
+  color: #28352f;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -60,7 +61,7 @@ body {
   right: 0;
   width: 24px;
   height: 24px;
-  margin: 10px 35px;
+  margin: 10px 24px;
 }
 
 #top-nav > input:checked + #menu {
@@ -331,13 +332,21 @@ button:active {
   height: 352px;
   background-image: url(images/Img\ Plaholder\ about.png);
   background-repeat: no-repeat;
-  justify-content: space-around;
+  align-items: center;
 }
 
-.skill-cards img { margin: 40px 123px 36px 123px; }
+.skill-cards img {
+  margin: 40px;
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  padding: 16px;
+  border-radius: 50%;
+  box-shadow:  0px 16px 24px rgba(37, 47, 137, 0.08);
+}
 
 .skill-cards h4 {
-  margin: 16px;
+  margin: 24px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -350,7 +359,10 @@ button:active {
 .skill-cards ul {
   display: flex;
   list-style: none;
+  flex-wrap: wrap;
   padding: 0%;
+  margin-bottom: 20px;
+  margin-top: 0%;
   width: 100%;
   justify-content: center;
 }
