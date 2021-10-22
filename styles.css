@@ -287,7 +287,7 @@ button:active {
   align-items: center;
   width: 100%;
   margin: 0%;
-  margin-bottom: 58px;
+  margin-bottom: 33px;
   background-image: url(images/illustration\ 2-about\ me\ mobile.svg);
   background-position: bottom left;
   background-repeat: no-repeat;
@@ -321,6 +321,7 @@ button:active {
   display: grid;
   grid-template: repeat(auto-fill, 1fr)/repeat(auto-fill, 1fr);
   gap: 24px;
+  margin: 24px;
 }
 
 .card {
@@ -331,4 +332,39 @@ button:active {
   background-image: url(images/Img\ Plaholder\ about.png);
   background-repeat: no-repeat;
   justify-content: space-around;
+}
+
+.skill-cards img { margin: 40px 123px 36px 123px; }
+
+.skill-cards h4 {
+  margin: 16px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #344563;
+}
+
+.skill-cards ul {
+  display: flex;
+  list-style: none;
+  padding: 0%;
+  width: 100%;
+  justify-content: center;
+}
+
+.skill-cards li {
+  padding: 12px;
+  margin: 4px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #36B37E;
 }
