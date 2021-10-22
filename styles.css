@@ -257,7 +257,7 @@ button {
 
 button:hover {
   background-color: #36b37f;
-  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 button:active {
@@ -336,7 +336,7 @@ button:active {
   background-color: white;
   padding: 16px;
   border-radius: 50%;
-  box-shadow: 0px 16px 24px rgba(37, 47, 137, 0.08);
+  box-shadow: 0 16px 24px rgba(37, 47, 137, 0.08);
 }
 
 .skill-cards h4 {
