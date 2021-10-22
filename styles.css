@@ -47,7 +47,7 @@ body {
 }
 
 /* used https://isabelcastillo.com/pure-css-mobile-toggle-menu to guide */
-#menu,
+.drop-menu,
 #menu-bottom,
 #top-nav > input {
   display: none;
@@ -64,7 +64,7 @@ body {
   margin: 10px 24px;
 }
 
-#top-nav > input:checked + #menu {
+#top-nav > input:checked + .drop-menu {
   display: flex;
   flex-direction: column;
   clear: both;
@@ -89,36 +89,7 @@ body {
   height: 20vh;
 }
 
-#menu a { text-decoration: none; }
-
-/* Moved proj-text li and .skill-cards li here because linter's stylelint */
-
-.proj-text li {
-  padding: 8px 12px;
-  background: #ebf0ee;
-  border-radius: 4px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  color: #3a4a42;
-}
-
-.skill-cards li {
-  padding: 12px;
-  margin: 4px;
-  background: #fff;
-  border-radius: 8px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  color: #36b37e;
-}
+.drop-menu a { text-decoration: none; }
 
 #menu li {
   margin: 5px;
@@ -253,7 +224,18 @@ body {
   justify-content: space-around;
 }
 
-/* Over here sat the .proj-text li, until linter, in it's infinite wisdom made me change it */
+.proj-text li {
+  padding: 8px 12px;
+  background: #ebf0ee;
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #3a4a42;
+}
 
 button {
   padding: 12px;
@@ -379,4 +361,16 @@ button:active {
   justify-content: center;
 }
 
-/* Here sat skill-cards li but for the grace of linter */
+.skill-cards li {
+  padding: 12px;
+  margin: 4px;
+  background: #fff;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #36b37e;
+}
