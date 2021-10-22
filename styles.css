@@ -23,7 +23,7 @@ body {
   padding: 0%;
 }
 
-#top-nav {
+.top-nav {
   display: block;
   position: fixed;
   top: 0;
@@ -34,7 +34,7 @@ body {
   background-color: white;
 }
 
-#top-nav a {
+.top-nav a {
   text-decoration: none;
   position: fixed;
   left: 0;
@@ -49,11 +49,11 @@ body {
 /* used https://isabelcastillo.com/pure-css-mobile-toggle-menu to guide */
 .drop-menu,
 #menu-bottom,
-#top-nav > input {
+.top-nav > input {
   display: none;
 }
 
-#top-nav label {
+.top-nav label {
   display: flex;
   text-align: center;
   position: fixed;
@@ -64,7 +64,7 @@ body {
   margin: 10px 24px;
 }
 
-#top-nav > input:checked + .drop-menu {
+.top-nav > input:checked + .drop-menu {
   display: flex;
   flex-direction: column;
   clear: both;
@@ -80,7 +80,7 @@ body {
   list-style: none;
 }
 
-#top-nav > input:checked + #menu-bottom {
+.top-nav > input:checked + #menu-bottom {
   display: flex;
   position: fixed;
   bottom: 0;
@@ -91,7 +91,7 @@ body {
 
 .drop-menu a { text-decoration: none; }
 
-#menu li {
+.drop-menu li {
   margin: 5px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
