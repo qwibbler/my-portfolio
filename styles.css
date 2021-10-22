@@ -154,14 +154,12 @@ body {
 */
 
 .project-page {
-  display: flex;
+  display: grid;
   flex-direction: column;
   align-items: center;
 }
 
-.project-page header {
-  display: flex;
-  flex-direction: column;
+h3 {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -172,9 +170,17 @@ body {
   color: #172b4d;
 }
 
+.project-page header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #recent-works { margin: 24px; }
 
-#separate { margin-bottom: 62px; }
+#separate {
+  margin-bottom: 62px;
+}
 
 .projects {
   display: grid;
@@ -289,20 +295,13 @@ button:active {
   background-repeat: no-repeat;
 }
 
-.about-page header {
+.about-page h3 {
   margin-top: 56px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 52px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #172b4d;
+  margin-bottom: 12px;
 }
 
 .about-page p {
+  margin-top: 0;
   padding: 12px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
