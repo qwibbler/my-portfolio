@@ -174,17 +174,20 @@ body {
 
 .projects {
   display: grid;
-  grid-template: repeat(6, 1fr)/1fr;
-  row-gap: 24px;
+  grid-template: repeat(auto-fill, 1fr)/repeat(auto-fill, 1fr);
+  /* row-gap: 24px;
+  column-gap: 24px; */
+  gap: 24px;
   margin: 26px;
+  /* border: 3.4px solid red; */
 }
 
 .proj {
   display: flex;
   flex-direction: column;
+  grid-area: auto;
   width: 329px;
   height: 476px;
-  margin: 12px;
   background-image: url(images/Img\ Plaholder\ project.png);
   background-repeat: no-repeat;
   justify-content: flex-end;
