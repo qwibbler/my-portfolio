@@ -181,11 +181,8 @@ body {
 .projects {
   display: grid;
   grid-template: repeat(auto-fill, 1fr)/repeat(auto-fill, 1fr);
-  /* row-gap: 24px;
-  column-gap: 24px; */
   gap: 24px;
   margin: 26px;
-  /* border: 3.4px solid red; */
 }
 
 .proj {
@@ -212,7 +209,7 @@ body {
 
 .proj-text h4 {
   margin: 16px;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -235,8 +232,7 @@ body {
   padding: 8px 12px;
   background: #EBF0EE;
   border-radius: 4px;
-  /* margin: 8px; */
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -250,7 +246,7 @@ button {
   background-color: #36b37f;
   border: none;
   border-radius: 4px;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -270,4 +266,69 @@ button:hover {
 
 button:active {
   background-color: #008552;
+}
+
+/*
+    ***PROJECT PAGE***
+*/
+
+.about-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(images/illustration\ 1-\ about\ me-mobile.svg);
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+#main-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0%;
+  margin-bottom: 58px;
+  background-image: url(images/illustration\ 2-about\ me\ mobile.svg);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+}
+
+.about-page header {
+  margin-top: 56px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #172B4D;
+}
+
+.about-page p {
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526E;
+}
+
+.skill-cards {
+  display: grid;
+  grid-template: repeat(auto-fill, 1fr)/repeat(auto-fill, 1fr);
+  gap: 24px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 327px;
+  height: 352px;
+  background-image: url(images/Img\ Plaholder\ about.png);
+  background-repeat: no-repeat;
+  justify-content: space-around;
 }
