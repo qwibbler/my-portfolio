@@ -239,9 +239,9 @@ body {
   color: #3A4A42;
 }
 
-.proj button {
+button {
   padding: 12px;
-  background-color: #36B37F;
+  background-color: #36b37f;
   border: none;
   border-radius: 4px;
   font-family: Inter;
@@ -255,4 +255,13 @@ body {
   letter-spacing: 0.03em;
   color: #FFFFFF;
   margin-bottom: 24px;
+}
+
+button:hover {
+  background-color: #36b37f;
+  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24)
+}
+
+button:active {
+  background-color: #008552;
 }
