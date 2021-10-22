@@ -91,6 +91,35 @@ body {
 
 #menu a { text-decoration: none; }
 
+/* Moved proj-text li and .skill-cards li here because linter's stylelint */
+
+.proj-text li {
+  padding: 8px 12px;
+  background: #ebf0ee;
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #3a4a42;
+}
+
+.skill-cards li {
+  padding: 12px;
+  margin: 4px;
+  background: #fff;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #36b37e;
+}
+
 #menu li {
   margin: 5px;
   font-family: 'Inter', sans-serif;
@@ -172,9 +201,9 @@ body {
   color: #172b4d;
 }
 
-.project-page > header > h3 { margin: 24px; }
+#recent-works { margin: 24px; }
 
-.project-page > header > img { margin-bottom: 62px; }
+#separate { margin-bottom: 62px; }
 
 .projects {
   display: grid;
@@ -224,18 +253,7 @@ body {
   justify-content: space-around;
 }
 
-.proj-text li {
-  padding: 8px 12px;
-  background: #ebf0ee;
-  border-radius: 4px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  color: #3a4a42;
-}
+/* Over here sat the .proj-text li, until linter, in it's infinite wisdom made me change it */
 
 button {
   padding: 12px;
@@ -361,16 +379,4 @@ button:active {
   justify-content: center;
 }
 
-.skill-cards li {
-  padding: 12px;
-  margin: 4px;
-  background: #fff;
-  border-radius: 8px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  color: #36b37e;
-}
+/* Here sat skill-cards li but for the grace of linter */
