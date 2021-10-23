@@ -23,7 +23,7 @@ body {
   padding: 0%;
 }
 
-#top-nav {
+.top-nav {
   display: block;
   position: fixed;
   top: 0;
@@ -34,11 +34,12 @@ body {
   background-color: white;
 }
 
-#top-nav a {
+.top-nav a {
   text-decoration: none;
   position: fixed;
   left: 0;
   margin: 10px 24px;
+  color: #28352f;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -46,13 +47,13 @@ body {
 }
 
 /* used https://isabelcastillo.com/pure-css-mobile-toggle-menu to guide */
-#menu,
+.drop-menu,
 #menu-bottom,
-#top-nav > input {
+.top-nav > input {
   display: none;
 }
 
-#top-nav label {
+.top-nav label {
   display: flex;
   text-align: center;
   position: fixed;
@@ -60,10 +61,10 @@ body {
   right: 0;
   width: 24px;
   height: 24px;
-  margin: 10px 35px;
+  margin: 10px 24px;
 }
 
-#top-nav > input:checked + #menu {
+.top-nav > input:checked + .drop-menu {
   display: flex;
   flex-direction: column;
   clear: both;
@@ -79,7 +80,7 @@ body {
   list-style: none;
 }
 
-#top-nav > input:checked + #menu-bottom {
+.top-nav > input:checked + #menu-bottom {
   display: flex;
   position: fixed;
   bottom: 0;
@@ -88,9 +89,9 @@ body {
   height: 20vh;
 }
 
-#menu a { text-decoration: none; }
+.drop-menu a { text-decoration: none; }
 
-#menu li {
+.drop-menu li {
   margin: 5px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -146,4 +147,240 @@ body {
   justify-content: space-around;
 }
 
-#more { margin: 64px; }
+.nav-bar-bot img {
+  height: 20px;
+  width: 20px;
+}
+
+#more {
+  width: 42px;
+  height: 42px;
+  margin-top: 64px;
+}
+
+/*
+    ***PROJECT PAGE***
+*/
+
+.project-page {
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  align-items: center;
+  text-align: center;
+  color: #172b4d;
+}
+
+.project-page header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#recent-works { margin: 24px; }
+
+#separate {
+  margin-bottom: 62px;
+  width: 48px;
+  height: 4px;
+}
+
+.projects {
+  display: grid;
+  gap: 24px;
+  margin: 26px;
+}
+
+.proj {
+  display: flex;
+  flex-direction: column;
+  grid-area: auto;
+  width: 329px;
+  height: 476px;
+  background-image: url(images/Img\ Plaholder\ project.png);
+  background-repeat: no-repeat;
+  justify-content: flex-end;
+}
+
+.proj-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 222px;
+  background-color: white;
+  border-radius: 8px;
+  margin: 1px;
+}
+
+.proj-text h4 {
+  margin: 16px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #3a4a42;
+}
+
+.proj-text ul {
+  display: flex;
+  list-style: none;
+  padding: 0%;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.proj-text li {
+  padding: 8px 12px;
+  background: #ebf0ee;
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #3a4a42;
+}
+
+button {
+  padding: 12px;
+  background-color: #36b37f;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+button:hover {
+  background-color: #36b37f;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+button:active {
+  background-color: #008552;
+}
+
+/*
+    ***PROJECT PAGE***
+*/
+
+.about-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(images/illustration\ 1-\ about\ me-mobile.svg);
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+#main-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0%;
+  margin-bottom: 33px;
+  background-image: url(images/illustration\ 2-about\ me\ mobile.svg);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+}
+
+.about-page h3 {
+  margin-top: 56px;
+  margin-bottom: 12px;
+}
+
+.about-page p {
+  margin-top: 0;
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526e;
+}
+
+.skill-cards {
+  display: grid;
+  gap: 24px;
+  margin: 24px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 327px;
+  height: 352px;
+  background-image: url(images/Img\ Plaholder\ about.png);
+  background-repeat: no-repeat;
+  align-items: center;
+}
+
+.skill-cards img {
+  margin: 40px;
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  padding: 16px;
+  border-radius: 50%;
+  box-shadow: 0 16px 24px rgba(37, 47, 137, 0.08);
+}
+
+.skill-cards h4 {
+  margin: 24px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #344563;
+}
+
+.skill-cards ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  padding: 0%;
+  margin-bottom: 20px;
+  margin-top: 0%;
+  width: 100%;
+  justify-content: center;
+}
+
+.skill-cards li {
+  padding: 12px;
+  margin: 4px;
+  background: #fff;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #36b37e;
+}
