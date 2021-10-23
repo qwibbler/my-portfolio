@@ -147,7 +147,17 @@ body {
   justify-content: space-around;
 }
 
-#more { margin-top: 64px; }
+.nav-bar-bot img {
+  height: 20px;
+  width: 20px;
+}
+
+
+#more {
+  width: 42px;
+  height: 42px;
+  margin-top: 64px;
+}
 
 /*
     ***PROJECT PAGE***
@@ -180,6 +190,8 @@ h3 {
 
 #separate {
   margin-bottom: 62px;
+  width: 48px;
+  height: 4px;
 }
 
 .projects {
