@@ -461,8 +461,3 @@ button:active {
 .end-page img {
   margin: 134px auto 8px auto;
 }
-
-@media (min-width: 600px) {
-  body {
-  }
-}
