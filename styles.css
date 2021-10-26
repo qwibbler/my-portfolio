@@ -390,7 +390,7 @@ button:active {
   align-items: center;
   background: url(images/Frame.svg);
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: right bottom 198px;
 }
 
 .contact-page h3 {
@@ -399,28 +399,28 @@ button:active {
   font-size: 40px;
   line-height: 52px;
   text-align: center;
-  color: #172B4D;
+  color: #172b4d;
   margin: 60px 24px;
 }
 
-form {
- display: flex;
- flex-direction: column;
- align-items: center;
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-form ul {
+#contact-form ul {
   list-style: none;
   width: 100vw;
-  padding: 0px 24px 0px 24px;
-} 
+  padding: 0 24px;
+}
 
-form li {
+#contact-form li {
   width: 100%;
   padding-bottom: 24px;
 }
 
-form input {
+#contact-form input {
   width: 100%;
   border-radius: 4px;
   padding: 15px 16px;
@@ -439,13 +439,13 @@ form input {
   Footer
 */
 
-footer {
+.end-page {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-footer a {
+#my-email {
   text-align: center;
   text-decoration: none;
   width: 100%;
@@ -455,10 +455,8 @@ footer a {
   font-size: 20px;
   line-height: 32px;
   color: #42526e;
-  margin: 0 0 134px 0;
 }
 
-footer img {
-  margin-bottom: 8px;
+.end-page img {
+  margin: 134px auto 8px auto;
 }
-
