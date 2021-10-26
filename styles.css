@@ -147,11 +147,6 @@ body {
   justify-content: space-around;
 }
 
-.nav-bar-bot img {
-  height: 20px;
-  width: 20px;
-}
-
 #more {
   width: 42px;
   height: 42px;
@@ -273,6 +268,7 @@ button {
 }
 
 button:hover {
+  cursor: pointer;
   background-color: #36b37f;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
@@ -383,4 +379,85 @@ button:active {
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #36b37e;
+}
+
+/*
+  Contact Page
+*/
+
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(images/Frame.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom 198px;
+}
+
+.contact-page h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+  margin: 60px 24px;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact-form ul {
+  list-style: none;
+  width: 100vw;
+  padding: 0 24px;
+}
+
+#contact-form li {
+  width: 100%;
+  padding-bottom: 24px;
+}
+
+#contact-form input {
+  width: 100%;
+  border-radius: 4px;
+  padding: 15px 16px;
+  border: 1px solid #d0d9d4;
+}
+
+#comment {
+  width: 100%;
+  height: 114px;
+  border-radius: 4px;
+  padding: 12px;
+  border: 1px solid #60c095;
+}
+
+/*
+  Footer
+*/
+
+.end-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#my-email {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  height: 189px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  color: #42526e;
+}
+
+.end-page img {
+  margin: 134px auto 8px auto;
 }
