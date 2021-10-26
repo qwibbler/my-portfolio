@@ -268,6 +268,7 @@ button {
 }
 
 button:hover {
+  cursor: pointer;
   background-color: #36b37f;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
@@ -459,4 +460,9 @@ button:active {
 
 .end-page img {
   margin: 134px auto 8px auto;
+}
+
+@media (min-width: 600px) {
+  body {
+  }
 }
