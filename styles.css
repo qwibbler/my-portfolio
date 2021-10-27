@@ -582,7 +582,7 @@ button:active {
   }
 
   /*
-  Contact Page
+    ***CONTACT PAGE***
   */
 
   .contact-page {
@@ -614,4 +614,16 @@ button:active {
   #contact-form button {
     margin: 0;
   }
+
+  /*
+    ***FOOTER***
+  */
+
+  footer {
+    border-top: 1px solid #dfe1e6;;
+  }
+
+  #my-email { display: none; }
+
+  #ender { display: none; }
 }
