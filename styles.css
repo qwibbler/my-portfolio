@@ -34,7 +34,7 @@ body {
   background-color: white;
 }
 
-.top-nav a {
+.logo {
   text-decoration: none;
   position: fixed;
   left: 0;
@@ -48,8 +48,7 @@ body {
 
 /* used https://isabelcastillo.com/pure-css-mobile-toggle-menu to guide */
 .drop-menu,
-#menu-bottom,
-.top-nav > input {
+#toggle-menu {
   display: none;
 }
 
@@ -64,41 +63,35 @@ body {
   margin: 10px 24px;
 }
 
-.top-nav > input:checked + .drop-menu {
+#toggle-menu:checked + .drop-menu {
   display: flex;
   flex-direction: column;
-  clear: both;
   position: relative;
   top: 0;
-  right: 0%;
+  right: 0;
   left: 0;
   width: 100vw;
   height: 80vh;
   margin-top: 48px;
+  padding: 0;
   background-color: white;
   border-radius: 0 0 50px 50px;
   list-style: none;
 }
 
-.top-nav > input:checked + #menu-bottom {
-  display: flex;
-  position: fixed;
-  bottom: 0;
-  background-color: #e5e5e5;
-  width: 100vw;
-  height: 20vh;
+.drop-menu li {
+  padding: auto;
+  margin: 40px;
 }
 
-.drop-menu a { text-decoration: none; }
-
-.drop-menu li {
-  margin: 5px;
+.drop-menu a {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
   color: #3a4a42;
+  text-decoration: none;
 }
 
 /*
@@ -116,7 +109,8 @@ body {
 }
 
 .main-page h1 {
-  padding: 24px;
+  margin: 64px 24px 58px 24px;
+  max-width: 327px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -129,7 +123,7 @@ body {
 .main-page span { color: #36b37e; }
 
 .main-page p {
-  padding: 24px;
+  margin: 24px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -190,6 +184,7 @@ h3 {
 
 .projects {
   display: grid;
+  align-items: center;
   gap: 24px;
   margin: 26px;
 }
@@ -200,6 +195,8 @@ h3 {
   grid-area: auto;
   width: 329px;
   height: 476px;
+  margin: auto;
+  grid-auto-flow: column;
   background-image: url(images/Img\ Plaholder\ project.png);
   background-repeat: no-repeat;
   justify-content: flex-end;
@@ -321,6 +318,7 @@ button:active {
 
 .skill-cards {
   display: grid;
+  align-items: center;
   gap: 24px;
   margin: 24px;
 }
@@ -434,6 +432,12 @@ button:active {
   border-radius: 4px;
   padding: 12px;
   border: 1px solid #60c095;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #091e42;
 }
 
 /*
@@ -460,4 +464,86 @@ button:active {
 
 .end-page img {
   margin: 134px auto 8px auto;
+}
+
+@media (min-width: 600px) {
+  .top-nav {
+    display: flex;
+    justify-content: center;
+    height: 0;
+  }
+
+  .logo,
+  .top-nav label,
+  #toggle-menu {
+    display: none;
+  }
+
+  .drop-menu {
+    display: flex;
+    width: auto;
+    height: 40px;
+    padding: 0;
+    background-color: none;
+    border-radius: none;
+    list-style: none;
+  }
+
+  .drop-menu li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .drop-menu a {
+    padding: 10px 12px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #344563;
+    text-decoration: none;
+  }
+
+  /*
+  ***MAIN PAGE***
+  */
+
+  .main-page {
+    margin-top: 0;
+    background-image: url(images/Header-llustration-desktop@2x.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left 27px top 0;
+  }
+
+  .main-page h1 {
+    margin: 232px 260px 24px 260px;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 60px;
+    max-width: 920px;
+  }
+
+  .main-page p {
+    max-width: 920px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #172b4d;
+  }
+
+  .nav-bar-bot ul {
+    width: 200px;
+    justify-content: space-around;
+  }
+
+  #more {
+    margin-top: 91px;
+    margin-bottom: 495px;
+  }
 }
