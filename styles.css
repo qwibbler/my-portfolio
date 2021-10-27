@@ -184,7 +184,9 @@ h3 {
 
 .projects {
   display: grid;
-  align-items: center;
+  grid-template-columns: repeat(auto-fill, 329px);
+  align-content: center;
+  justify-content: center;
   gap: 24px;
   margin: 26px;
 }
@@ -545,5 +547,17 @@ button:active {
   #more {
     margin-top: 91px;
     margin-bottom: 495px;
+  }
+
+  /*
+      ***PROJECT PAGE***
+  */
+
+  #separate {
+    display: none;
+  }
+
+  .projects {
+    margin-top: 28px;
   }
 }
