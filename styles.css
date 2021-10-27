@@ -106,6 +106,7 @@ body {
   background-image: url(images/header-illsutration-mobile@2x.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
 }
 
 .main-page h1 {
@@ -185,6 +186,7 @@ h3 {
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fill, 329px);
+  width: 100vw;
   align-content: center;
   justify-content: center;
   gap: 24px;
@@ -198,7 +200,6 @@ h3 {
   width: 329px;
   height: 476px;
   margin: auto;
-  grid-auto-flow: column;
   background-image: url(images/Img\ Plaholder\ project.png);
   background-repeat: no-repeat;
   justify-content: flex-end;
@@ -277,7 +278,7 @@ button:active {
 }
 
 /*
-    ***PROJECT PAGE***
+    ***ABOUT PAGE***
 */
 
 .about-page {
@@ -320,7 +321,9 @@ button:active {
 
 .skill-cards {
   display: grid;
-  align-items: center;
+  grid-template-columns: repeat(auto-fill, 327px);
+  grid-auto-flow: column;
+  align-content: center;
   gap: 24px;
   margin: 24px;
 }
@@ -468,7 +471,7 @@ button:active {
   margin: 134px auto 8px auto;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 785px) {
   .top-nav {
     display: flex;
     justify-content: center;
@@ -516,9 +519,6 @@ button:active {
   .main-page {
     margin-top: 0;
     background-image: url(images/Header-llustration-desktop@2x.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left 27px top 0;
   }
 
   .main-page h1 {
@@ -559,5 +559,35 @@ button:active {
 
   .projects {
     margin-top: 28px;
+  }
+
+  /*
+    ***ABOUT PAGE***
+  */
+
+  .about-page {
+    margin-top: 88px;
+    background-image: url(images/desktop-about-right.svg);
+  }
+
+  #main-about {
+    background-image: url(images/illustration-about-me-2-desktop@2x.svg);
+    background-position: bottom 29px left;
+    margin-bottom: 28px;
+  }
+
+  .about-page h3 {
+    margin-top: 78px;
+    margin-bottom: 24px;
+  }
+
+  .about-page p {
+    max-width: 920px;
+    margin-left: 224px;
+    margin-right: 224px;
+  }
+
+  .about-page button {
+    margin: 0;
   }
 }
