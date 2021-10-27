@@ -147,6 +147,12 @@ body {
   margin-top: 64px;
 }
 
+#more img {
+  padding: 16px 13px;
+  border: 1px solid #DFE1E6;
+  border-radius: 32px;
+}
+
 /*
     ***PROJECT PAGE***
 */
