@@ -80,7 +80,6 @@ body {
 }
 
 .drop-menu li {
-  padding: auto;
   margin: 40px;
 }
 
@@ -483,8 +482,6 @@ button:active {
     width: auto;
     height: 40px;
     padding: 0;
-    background-color: none;
-    border-radius: none;
     list-style: none;
   }
 
@@ -593,7 +590,6 @@ button:active {
     grid-template-columns: 1fr 2fr;
     gap: 24px;
     align-items: center;
-    /* margin-top: 98px; */
     width: 100vw;
     padding: 148px 7% 225px 7%;
     background-image: url(images/contact-left-1@2x.svg), url(images/contact-bottom-desktop@2x.svg), url(images/contact-right@2x.svg);
@@ -603,11 +599,11 @@ button:active {
   .contact-page h3 {
     margin: 0 24px 0 0;
   }
-  
+
   #contact-form {
     width: auto;
     align-items: flex-start;
-}
+  }
 
   #contact-form ul {
     width: 100%;
@@ -623,9 +619,7 @@ button:active {
     ***FOOTER***
   */
 
-  footer {
-    border-top: 1px solid #dfe1e6;;
-  }
+  footer { border-top: 1px solid #dfe1e6; }
 
   #my-email { display: none; }
 
