@@ -138,7 +138,17 @@ body {
   padding: 0;
   display: flex;
   width: 50vw;
+  max-width: 200px;
   justify-content: space-around;
+}
+
+.nav-bar-bot li {
+  display: flex;
+}
+
+.nav-bar-bot a {
+  display: flex;
+  align-items: center;
 }
 
 #more {
@@ -149,7 +159,7 @@ body {
 
 #more img {
   padding: 16px 13px;
-  border: 1px solid #DFE1E6;
+  border: 1px solid #dfe1e6;
   border-radius: 32px;
 }
 
@@ -167,6 +177,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100vw;
 }
 
 h3 {
