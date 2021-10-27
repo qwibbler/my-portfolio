@@ -169,15 +169,14 @@ body {
 
 .project-page {
   display: grid;
-  flex-direction: column;
   align-items: center;
 }
 
 .project-page header {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  width: 100vw;
 }
 
 h3 {
@@ -186,12 +185,14 @@ h3 {
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
-  align-items: center;
   text-align: center;
   color: #172b4d;
 }
 
-#recent-works { margin: 48px auto 24px auto; }
+#recent-works {        /* This h3 specific */
+  margin-top: 48px;
+  margin-bottom: 24px;
+}
 
 #separate {
   margin-bottom: 62px;
@@ -299,7 +300,6 @@ button:active {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100vw;
   background-image: url(images/illustration\ 1-\ about\ me-mobile.svg);
   background-position: top right;
   background-repeat: no-repeat;
@@ -309,22 +309,24 @@ button:active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-content: center;
-  justify-content: center;
-  width: 100vw;
-  margin: 0%;
+  margin: 0;
   margin-bottom: 33px;
   background-image: url(images/illustration\ 2-about\ me\ mobile.svg);
   background-position: bottom left;
   background-repeat: no-repeat;
 }
 
-.about-page h3 {
+#main-about * {
+  flex: 1;
+  max-width: 900px;
+}
+
+#main-about h3 {
   margin-top: 56px;
   margin-bottom: 12px;
 }
 
-.about-page p {
+#main-about p {
   margin-top: 0;
   padding: 12px;
   font-family: 'Inter', sans-serif;
@@ -481,7 +483,7 @@ button:active {
   margin: 134px auto 8px auto;
 }
 
-@media (min-width: 785px) {
+@media (min-width: 1080px) {
   .top-nav {
     display: flex;
     justify-content: center;
