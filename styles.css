@@ -158,6 +158,12 @@ body {
   align-items: center;
 }
 
+.project-page header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 h3 {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -169,13 +175,7 @@ h3 {
   color: #172b4d;
 }
 
-.project-page header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#recent-works { margin: 24px; }
+#recent-works { margin: 48px auto 24px auto; }
 
 #separate {
   margin-bottom: 62px;
@@ -593,9 +593,9 @@ button:active {
     grid-template-columns: 1fr 2fr;
     gap: 24px;
     align-items: center;
-    margin-top: 148px;
+    /* margin-top: 98px; */
     width: 100vw;
-    padding: 0 7% 225px 7%;
+    padding: 148px 7% 225px 7%;
     background-image: url(images/contact-left-1@2x.svg), url(images/contact-bottom-desktop@2x.svg), url(images/contact-right@2x.svg);
     background-position: bottom left, bottom center, bottom right;
   }
