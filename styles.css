@@ -34,7 +34,7 @@ body {
   background-color: white;
 }
 
-.top-nav a {
+.logo {
   text-decoration: none;
   position: fixed;
   left: 0;
@@ -48,8 +48,7 @@ body {
 
 /* used https://isabelcastillo.com/pure-css-mobile-toggle-menu to guide */
 .drop-menu,
-#menu-bottom,
-.top-nav > input {
+#toggle-menu {
   display: none;
 }
 
@@ -64,41 +63,34 @@ body {
   margin: 10px 24px;
 }
 
-.top-nav > input:checked + .drop-menu {
+#toggle-menu:checked + .drop-menu {
   display: flex;
   flex-direction: column;
-  clear: both;
   position: relative;
   top: 0;
-  right: 0%;
+  right: 0;
   left: 0;
   width: 100vw;
   height: 80vh;
   margin-top: 48px;
+  padding: 0;
   background-color: white;
   border-radius: 0 0 50px 50px;
   list-style: none;
 }
 
-.top-nav > input:checked + #menu-bottom {
-  display: flex;
-  position: fixed;
-  bottom: 0;
-  background-color: #e5e5e5;
-  width: 100vw;
-  height: 20vh;
+.drop-menu li {
+  margin: 40px;
 }
 
-.drop-menu a { text-decoration: none; }
-
-.drop-menu li {
-  margin: 5px;
+.drop-menu a {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
   color: #3a4a42;
+  text-decoration: none;
 }
 
 /*
@@ -113,10 +105,12 @@ body {
   background-image: url(images/header-illsutration-mobile@2x.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
 }
 
 .main-page h1 {
-  padding: 24px;
+  margin: 64px 24px 58px 24px;
+  max-width: 327px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -129,7 +123,7 @@ body {
 .main-page span { color: #36b37e; }
 
 .main-page p {
-  padding: 24px;
+  margin: 24px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -144,7 +138,17 @@ body {
   padding: 0;
   display: flex;
   width: 50vw;
+  max-width: 200px;
   justify-content: space-around;
+}
+
+.nav-bar-bot li {
+  display: flex;
+}
+
+.nav-bar-bot a {
+  display: flex;
+  align-items: center;
 }
 
 #more {
@@ -153,13 +157,25 @@ body {
   margin-top: 64px;
 }
 
+#more-v {
+  padding: 16px 13px;
+  border: 1px solid #dfe1e6;
+  border-radius: 32px;
+}
+
 /*
     ***PROJECT PAGE***
 */
 
 .project-page {
   display: grid;
+  align-items: center;
+}
+
+.project-page header {
+  display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -169,18 +185,14 @@ h3 {
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
-  align-items: center;
   text-align: center;
   color: #172b4d;
 }
 
-.project-page header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#recent-works {        /* This h3 specific */
+  margin-top: 48px;
+  margin-bottom: 24px;
 }
-
-#recent-works { margin: 24px; }
 
 #separate {
   margin-bottom: 62px;
@@ -190,6 +202,9 @@ h3 {
 
 .projects {
   display: grid;
+  grid-template-columns: repeat(auto-fit, 329px);
+  align-content: center;
+  justify-content: center;
   gap: 24px;
   margin: 26px;
 }
@@ -197,7 +212,6 @@ h3 {
 .proj {
   display: flex;
   flex-direction: column;
-  grid-area: auto;
   width: 329px;
   height: 476px;
   background-image: url(images/Img\ Plaholder\ project.png);
@@ -278,13 +292,14 @@ button:active {
 }
 
 /*
-    ***PROJECT PAGE***
+    ***ABOUT PAGE***
 */
 
 .about-page {
-  display: flex;
+  display: grid;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-image: url(images/illustration\ 1-\ about\ me-mobile.svg);
   background-position: top right;
   background-repeat: no-repeat;
@@ -294,20 +309,19 @@ button:active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  margin: 0%;
+  margin: 0;
   margin-bottom: 33px;
   background-image: url(images/illustration\ 2-about\ me\ mobile.svg);
   background-position: bottom left;
   background-repeat: no-repeat;
 }
 
-.about-page h3 {
+#about-me {
   margin-top: 56px;
   margin-bottom: 12px;
 }
 
-.about-page p {
+#main-about p {
   margin-top: 0;
   padding: 12px;
   font-family: 'Inter', sans-serif;
@@ -321,6 +335,9 @@ button:active {
 
 .skill-cards {
   display: grid;
+  grid-template-columns: repeat(auto-fit, 327px);
+  align-content: center;
+  justify-content: center;
   gap: 24px;
   margin: 24px;
 }
@@ -335,7 +352,7 @@ button:active {
   align-items: center;
 }
 
-.skill-cards img {
+.card img {
   margin: 40px;
   width: 80px;
   height: 80px;
@@ -345,7 +362,7 @@ button:active {
   box-shadow: 0 16px 24px rgba(37, 47, 137, 0.08);
 }
 
-.skill-cards h4 {
+.card h4 {
   margin: 24px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -356,7 +373,7 @@ button:active {
   color: #344563;
 }
 
-.skill-cards ul {
+.card ul {
   display: flex;
   list-style: none;
   flex-wrap: wrap;
@@ -386,21 +403,14 @@ button:active {
 */
 
 .contact-page {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   align-items: center;
-  background: url(images/Frame.svg);
+  background-image: url(images/Frame.svg);
   background-repeat: no-repeat;
-  background-position: right bottom 198px;
+  background-position: right bottom;
 }
 
 .contact-page h3 {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 52px;
-  text-align: center;
-  color: #172b4d;
   margin: 60px 24px;
 }
 
@@ -408,16 +418,16 @@ button:active {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100vw;
 }
 
 #contact-form ul {
   list-style: none;
-  width: 100vw;
+  width: 100%;
   padding: 0 24px;
 }
 
 #contact-form li {
-  width: 100%;
   padding-bottom: 24px;
 }
 
@@ -434,6 +444,12 @@ button:active {
   border-radius: 4px;
   padding: 12px;
   border: 1px solid #60c095;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #091e42;
 }
 
 /*
@@ -458,6 +474,168 @@ button:active {
   color: #42526e;
 }
 
-.end-page img {
+#ender {
   margin: 134px auto 8px auto;
+}
+
+@media (min-width: 1080px) {
+  .top-nav {
+    display: flex;
+    justify-content: center;
+    height: 0;
+  }
+
+  .logo,
+  .top-nav label,
+  #toggle-menu {
+    display: none;
+  }
+
+  .drop-menu {
+    display: flex;
+    width: auto;
+    height: 40px;
+    padding: 0;
+    list-style: none;
+  }
+
+  .drop-menu li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .drop-menu a {
+    padding: 10px 12px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #344563;
+    text-decoration: none;
+  }
+
+  /*
+  ***MAIN PAGE***
+  */
+
+  .main-page {
+    margin-top: 0;
+    background-image: url(images/Header-llustration-desktop@2x.svg);
+  }
+
+  .main-page h1 {
+    margin: 232px 260px 24px 260px;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 60px;
+    max-width: 920px;
+  }
+
+  .main-page p {
+    max-width: 920px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #172b4d;
+  }
+
+  .nav-bar-bot ul {
+    width: 200px;
+    justify-content: space-around;
+  }
+
+  #more {
+    margin-top: 91px;
+    margin-bottom: 495px;
+  }
+
+  /*
+      ***PROJECT PAGE***
+  */
+
+  #separate {
+    display: none;
+  }
+
+  .projects {
+    margin-top: 28px;
+  }
+
+  /*
+    ***ABOUT PAGE***
+  */
+
+  .about-page {
+    margin-top: 88px;
+    background-image: url(images/desktop-about-right.svg);
+  }
+
+  #main-about {
+    background-image: url(images/illustration-about-me-2-desktop@2x.svg);
+    background-position: bottom 29px left;
+    margin-bottom: 28px;
+  }
+
+  .about-page h3 {
+    margin-top: 78px;
+    margin-bottom: 24px;
+  }
+
+  .about-page p {
+    max-width: 920px;
+    margin-left: 224px;
+    margin-right: 224px;
+  }
+
+  .about-page button {
+    margin: 0;
+  }
+
+  /*
+    ***CONTACT PAGE***
+  */
+
+  .contact-page {
+    grid-template-columns: 1fr 2fr;
+    gap: 24px;
+    align-items: center;
+    width: 100vw;
+    padding: 148px 7% 225px 7%;
+    background-image: url(images/contact-left-1@2x.svg), url(images/contact-bottom-desktop@2x.svg), url(images/contact-right@2x.svg);
+    background-position: bottom left, bottom center, bottom right;
+  }
+
+  .contact-page h3 {
+    margin: 0 24px 0 0;
+  }
+
+  #contact-form {
+    width: auto;
+    align-items: flex-start;
+  }
+
+  #contact-form ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  #contact-form button {
+    margin: 0;
+  }
+
+  /*
+    ***FOOTER***
+  */
+
+  footer { border-top: 1px solid #dfe1e6; }
+
+  #my-email { display: none; }
+
+  #ender { display: none; }
 }

@@ -33,11 +33,10 @@
                 <label for="toggle-menu" aria-label="Menu">&#9776;</label>
                 <input id="toggle-menu" type="checkbox" />
                 <ul class="drop-menu">
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#second-page">Portfolio</a></li>
+                    <li><a href="#main-about">About</a></li>
+                    <li><a href="#contact-me">Contact</a></li>
                 </ul>
-                <div id="menu-bottom"></div>
             </nav>
         </header>
     
@@ -68,11 +67,11 @@
                         </li>
                     </ul>
                 </nav>
-                <div id="more"><a href="#more"><img src="images/more.png" alt="Next page"></a></div>
+                <div id="more"><a href="#second-page"><img id="more-v" src="images/more-v.svg" alt="Next page"></a></div>
             </section>
             <!-- Project Page -->
-            <section class="project-page">
-                <header id="second-page">
+            <section class="project-page" id="second-page">
+                <header>
                     <h3 id="recent-works">My Recent Works</h3>
                     <img id="separate" src="images/Indicator-small.png" alt="separator">
                 </header>
@@ -162,7 +161,7 @@
                 </div>
                 <div class="skill-cards">
                     <div class="card">
-                        <img src="images/Icon Langguage.svg" alt="Languges Icon">
+                        <img src="images/Icon Langguage.svg" alt="Languages Icon">
                         <h4>Languages</h4>
                         <ul>
                             <li>JavaScript</li>
@@ -196,44 +195,44 @@
                 </div>
             </section>
             <!-- Contact Page -->
-            <section class="contact-page">
+            <section class="contact-page" id="contact-me">
                 <header>
                     <h3>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3>
                 </header>
                 <form id="contact-form" action="https://formspree.io/f/moqyzrzd" method="post">
                     <ul>
-                        <li><input type="text" placeholder="Full Name" maxlength="30" required></li>
-                        <li><input type="email" placeholder="Email address" required></li>
-                        <li><textarea name="msg" id="comment" maxlength="500" value="Enter text here" placeholder="Enter text here" required></textarea></li>
+                        <li><input type="text" name="user-name" placeholder="Full Name" maxlength="30" required></li>
+                        <li><input type="email" name="user-email" placeholder="Email address" required></li>
+                        <li><textarea name="msg" id="comment" maxlength="500" placeholder="Enter text here" required></textarea></li>
                     </ul>
                     <button>Get in touch</button>
                 </form>
-                <nav class="nav-bar-bot">
-                    <ul id="nav-list">
-                        <li>
-                            <a href="https://twitter.com/hmemaz"><img src="images/twitter.png" alt="twitter icon"></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/hmemaz1994/"><img src="images/Linkedin icon.png"
-                                    alt="linkedin icon"></a>
-                        </li>
-                        <li>
-                            <a href="https://medium.com/"><img src="images/medium.png" alt="medium icon"></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/qwibbler"><img src="images/github.png" alt="github icon"></a>
-                        </li>
-                        <li>
-                            <a href="https://angel.co/"><img src="images/angellist.png" alt="angel icon"></a>
-                        </li>
-                    </ul>
-                </nav>
-                <a id="my-email" href="#">hmemaz@gmail.com</a>
             </section>
         </main>
 
         <footer class="end-page">
-            <img src="images/Shape-bottom.svg" alt="end separator">
+            <nav class="nav-bar-bot">
+                <ul id="nav-list">
+                    <li>
+                        <a href="https://twitter.com/hmemaz"><img src="images/twitter.png" alt="twitter icon"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/hmemaz1994/"><img src="images/Linkedin icon.png"
+                                alt="linkedin icon"></a>
+                    </li>
+                    <li>
+                        <a href="https://medium.com/"><img src="images/medium.png" alt="medium icon"></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/qwibbler"><img src="images/github.png" alt="github icon"></a>
+                    </li>
+                    <li>
+                        <a href="https://angel.co/"><img src="images/angellist.png" alt="angel icon"></a>
+                    </li>
+                </ul>
+            </nav>
+            <a id="my-email" href="#">hmemaz@gmail.com</a>
+            <img id="ender" src="images/Shape-bottom.svg" alt="end separator">
         </footer>
     </div>
 </body>
