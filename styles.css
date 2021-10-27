@@ -157,7 +157,7 @@ body {
   margin-top: 64px;
 }
 
-#more img {
+#more-v {
   padding: 16px 13px;
   border: 1px solid #dfe1e6;
   border-radius: 32px;
@@ -316,7 +316,7 @@ button:active {
   background-repeat: no-repeat;
 }
 
-#main-about h3 {
+#about-me {
   margin-top: 56px;
   margin-bottom: 12px;
 }
@@ -352,7 +352,7 @@ button:active {
   align-items: center;
 }
 
-.card > img {
+.card img {
   margin: 40px;
   width: 80px;
   height: 80px;
@@ -362,7 +362,7 @@ button:active {
   box-shadow: 0 16px 24px rgba(37, 47, 137, 0.08);
 }
 
-.card > h4 {
+.card h4 {
   margin: 24px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -373,7 +373,7 @@ button:active {
   color: #344563;
 }
 
-.card > ul {
+.card ul {
   display: flex;
   list-style: none;
   flex-wrap: wrap;
