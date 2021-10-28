@@ -7,9 +7,9 @@
   width: 100vw;
   height: 48px;
   background-color: white;
-  }
+}
   
-  .logo {
+.logo {
   text-decoration: none;
   position: fixed;
   left: 0;
@@ -19,46 +19,51 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
-  }
+}
   
   /* used https://isabelcastillo.com/pure-css-mobile-toggle-menu to guide */
-  .drop-menu,
-  #toggle-menu {
+.drop-menu,
+#toggle-menu {
   display: none;
-  }
+}
   
-  .top-nav label {
+#open {
   display: flex;
   text-align: center;
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   width: 24px;
   height: 24px;
   margin: 10px 24px;
-  }
+}
   
-  #toggle-menu:checked + .drop-menu {
+#toggle-menu:checked + .drop-menu {
   display: flex;
   flex-direction: column;
-  position: relative;
+  position: absolute;
   top: 0;
   right: 0;
   left: 0;
+  bottom: 57px;
   width: 100vw;
-  height: 80vh;
+  height: 85vh;
   margin-top: 48px;
   padding: 0;
   background-color: white;
   border-radius: 0 0 50px 50px;
-  list-style: none;
-  }
-  
-  .drop-menu li {
+  box-shadow: 0 15vh #e5e5e5, 0 48px 48px rgba(37, 47, 137, 0.08);
+}
+
+#toggle-menu:checked + .logo {
+  display: none;
+}
+
+.drop-menu li {
   margin: 40px;
-  }
-  
-  .drop-menu a {
+}
+
+.drop-menu a {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -66,5 +71,8 @@
   line-height: 44px;
   color: #3a4a42;
   text-decoration: none;
-  }
-  
+}
+
+.drop-menu a:active + .drop-menu {
+  display: none;
+}

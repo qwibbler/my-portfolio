@@ -6,7 +6,7 @@
   }
   
   .logo,
-  .top-nav label,
+  #open,
   #toggle-menu {
     display: none;
   }
