@@ -94,9 +94,9 @@
   font-size: 32px;
   line-height: 44px;
   color: #3a4a42;
-  transition: scale 0.3s ease-in-out;
+  transition: scale 0.1s ease-out;
 }
 
 .drop-menu a:hover {
-  scale: 150%;
+  scale: 1.5;
 }
