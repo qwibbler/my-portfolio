@@ -1,0 +1,70 @@
+.top-nav {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100vw;
+  height: 48px;
+  background-color: white;
+  }
+  
+  .logo {
+  text-decoration: none;
+  position: fixed;
+  left: 0;
+  margin: 10px 24px;
+  color: #28352f;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  }
+  
+  /* used https://isabelcastillo.com/pure-css-mobile-toggle-menu to guide */
+  .drop-menu,
+  #toggle-menu {
+  display: none;
+  }
+  
+  .top-nav label {
+  display: flex;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 24px;
+  margin: 10px 24px;
+  }
+  
+  #toggle-menu:checked + .drop-menu {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100vw;
+  height: 80vh;
+  margin-top: 48px;
+  padding: 0;
+  background-color: white;
+  border-radius: 0 0 50px 50px;
+  list-style: none;
+  }
+  
+  .drop-menu li {
+  margin: 40px;
+  }
+  
+  .drop-menu a {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #3a4a42;
+  text-decoration: none;
+  }
+  
