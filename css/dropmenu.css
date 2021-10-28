@@ -20,7 +20,7 @@
   font-size: 20px;
   line-height: 28px;
 }
-  
+
   /* used https://isabelcastillo.com/pure-css-mobile-toggle-menu to guide */
 .drop-menu,
 #toggle-menu {
@@ -29,13 +29,19 @@
   
 #open {
   display: flex;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 0;
   right: 0;
   width: 24px;
   height: 24px;
   margin: 10px 24px;
+  color: #28352f;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
 }
   
 #toggle-menu:checked + .drop-menu {
@@ -56,7 +62,7 @@
 }
 
 #toggle-menu:checked + .logo {
-  display: none;
+  display: hidden;
 }
 
 .drop-menu li {
@@ -70,7 +76,6 @@
   font-size: 32px;
   line-height: 44px;
   color: #3a4a42;
-  text-decoration: none;
 }
 
 .drop-menu a:active + .drop-menu {
