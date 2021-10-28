@@ -84,7 +84,7 @@ button:active {
   height: 48px;
   background-color: white;
 }
-  
+
 .logo {
   position: fixed;
   left: 0;
@@ -95,12 +95,12 @@ button:active {
   font-size: 20px;
   line-height: 28px;
 }
-  
+
 .drop-menu,
 #toggle-menu {
   display: none;
 }
-  
+
 .top-nav label {
   display: flex;
   text-align: center;
@@ -111,7 +111,7 @@ button:active {
   height: 24px;
   margin: 10px 24px;
 }
-  
+
 #toggle-menu:checked + .drop-menu {
   display: flex;
   flex-direction: column;
@@ -192,8 +192,6 @@ button:active {
   display: flex;
 }
 
-
-
 .nav-bar-bot a {
   display: flex;
   align-items: center;
@@ -204,9 +202,9 @@ button:active {
   animation-name: bounce;
 }
 
-@keyframes bounce { 
-  0%, 100% {transform: translateY(0);} 
-  50% {transform: translateY(-10px);} 
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
 }
 
 #more {
@@ -226,8 +224,6 @@ button:active {
   background-color: #36b37f;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
-
-
 
 /*
     ***PROJECT PAGE***

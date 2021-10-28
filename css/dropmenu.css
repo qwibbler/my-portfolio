@@ -8,7 +8,7 @@
   height: 48px;
   background-color: white;
 }
-  
+
 .logo {
   text-decoration: none;
   position: fixed;
@@ -21,12 +21,12 @@
   line-height: 28px;
 }
 
-  /* used https://isabelcastillo.com/pure-css-mobile-toggle-menu to guide */
+/* used https://isabelcastillo.com/pure-css-mobile-toggle-menu to guide */
 .drop-menu,
 #toggle-menu {
   display: none;
 }
-  
+
 #open {
   display: flex;
   align-items: center;
@@ -43,7 +43,7 @@
   font-size: 20px;
   line-height: 28px;
 }
-  
+
 #toggle-menu:checked + .drop-menu {
   display: flex;
   flex-direction: column;
@@ -62,7 +62,7 @@
 }
 
 #toggle-menu:checked + .logo {
-  display: hidden;
+  display: none;
 }
 
 .drop-menu li {
