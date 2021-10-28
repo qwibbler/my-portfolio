@@ -10,7 +10,6 @@
 }
 
 .logo {
-  text-decoration: none;
   position: fixed;
   left: 0;
   margin: 10px 24px;
@@ -19,6 +18,21 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
+}
+
+.logo:hover {
+  animation: wobble 1.5s;
+}
+
+/* copied from https://www.tutorialspoint.com/Wobble-Animation-Effect-with-CSS */
+@keyframes wobble {
+  0% { transform: translateX(0%); }
+  15% { transform: translateX(-12.5%) rotate(-5deg); }
+  30% { transform: translateX(10%) rotate(3deg); }
+  45% { transform: translateX(-7.5%) rotate(-3deg); }
+  60% { transform: translateX(5%) rotate(2deg); }
+  75% { transform: translateX(-2.5%) rotate(-1deg); }
+  100% { transform: translateX(0%); }
 }
 
 /* used https://isabelcastillo.com/pure-css-mobile-toggle-menu to guide */
@@ -42,6 +56,10 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
+}
+
+#open:hover {
+  cursor: pointer;
 }
 
 #toggle-menu:checked + .drop-menu {
@@ -76,5 +94,9 @@
   font-size: 32px;
   line-height: 44px;
   color: #3a4a42;
+  transition: scale 0.3s ease-in-out;
 }
 
+.drop-menu a:hover {
+  scale: 150%;
+}

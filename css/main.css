@@ -204,8 +204,10 @@ button:active {
 
 @keyframes bounce {
   0%,
+  20%,
+  80%
   100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+  50% { transform: translateY(-5px); }
 }
 
 #more {
@@ -218,12 +220,13 @@ button:active {
   padding: 16px 13px;
   border: 1px solid #dfe1e6;
   border-radius: 32px;
-  transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out, box-shadow 0.5s ease-out, scale 0.5s ease-out;
 }
 
 #more-v:hover {
   background-color: #36b37f;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  scale: 125%;
 }
 
 /*
