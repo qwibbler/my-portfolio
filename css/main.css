@@ -23,6 +23,49 @@ body {
   padding: 0%;
 }
 
+h2 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+button {
+  padding: 12px;
+  background-color: #36b37f;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #36b37f;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+button:active {
+  background-color: #008552;
+}
+
 /*
   ***MAIN PAGE***
 */
@@ -64,8 +107,6 @@ body {
 }
 
 .nav-bar-bot ul {
-  list-style: none;
-  padding: 0;
   display: flex;
   width: 50vw;
   max-width: 200px;
@@ -109,17 +150,7 @@ body {
   align-items: center;
 }
 
-h3 {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 52px;
-  text-align: center;
-  color: #172b4d;
-}
-
-#recent-works {        /* This h3 specific */
+#recent-works {        /* This h2 specific */
   margin-top: 48px;
   margin-bottom: 24px;
 }
@@ -149,6 +180,8 @@ h3 {
   height: 476px;
   background-image: url(../images/Img\ Plaholder\ project.png);
   background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
   justify-content: flex-end;
 }
 
@@ -177,8 +210,6 @@ h3 {
 
 .proj-text ul {
   display: flex;
-  list-style: none;
-  padding: 0%;
   width: 100%;
   justify-content: space-around;
 }
@@ -194,34 +225,6 @@ h3 {
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #3a4a42;
-}
-
-button {
-  padding: 12px;
-  background-color: #36b37f;
-  border: none;
-  border-radius: 4px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #fff;
-  margin-bottom: 24px;
-}
-
-button:hover {
-  cursor: pointer;
-  background-color: #36b37f;
-  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
-}
-
-button:active {
-  background-color: #008552;
 }
 
 /*
@@ -308,9 +311,7 @@ button:active {
 
 .card ul {
   display: flex;
-  list-style: none;
   flex-wrap: wrap;
-  padding: 0%;
   margin-bottom: 20px;
   margin-top: 0%;
   width: 100%;
@@ -343,7 +344,7 @@ button:active {
   background-position: right bottom;
 }
 
-.contact-page h3 {
+.contact-page h2 {
   margin: 60px 24px;
 }
 
@@ -355,7 +356,6 @@ button:active {
 }
 
 #contact-form ul {
-  list-style: none;
   width: 100%;
   padding: 0 24px;
 }
