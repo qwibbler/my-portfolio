@@ -78,6 +78,3 @@
   color: #3a4a42;
 }
 
-.drop-menu a:active + .drop-menu {
-  display: none;
-}

@@ -203,7 +203,8 @@ button:active {
 }
 
 @keyframes bounce {
-  0%, 100% { transform: translateY(0); }
+  0%,
+  100% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
 }
 
@@ -217,7 +218,7 @@ button:active {
   padding: 16px 13px;
   border: 1px solid #dfe1e6;
   border-radius: 32px;
-  transition: background-color .5s ease-out;
+  transition: background-color 0.5s ease-out;
 }
 
 #more-v:hover {
