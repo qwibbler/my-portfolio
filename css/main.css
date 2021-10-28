@@ -202,7 +202,6 @@ button:active {
 .nav-bar-bot a:hover {
   animation-duration: 0.5s;
   animation-name: bounce;
-  /* transition-timing-function: ease-in-out; */
 }
 
 @keyframes bounce { 
