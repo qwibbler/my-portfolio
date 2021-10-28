@@ -192,9 +192,22 @@ button:active {
   display: flex;
 }
 
+
+
 .nav-bar-bot a {
   display: flex;
   align-items: center;
+}
+
+.nav-bar-bot a:hover {
+  animation-duration: 0.5s;
+  animation-name: bounce;
+  /* transition-timing-function: ease-in-out; */
+}
+
+@keyframes bounce { 
+  0%, 100% {transform: translateY(0);} 
+  50% {transform: translateY(-10px);} 
 }
 
 #more {
