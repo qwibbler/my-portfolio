@@ -1,0 +1,161 @@
+@media (min-width: 1080px) {
+  .top-nav {
+    display: flex;
+    justify-content: center;
+    height: 0;
+  }
+  
+  .logo,
+  .top-nav label,
+  #toggle-menu {
+    display: none;
+  }
+  
+  .drop-menu {
+    display: flex;
+    width: auto;
+    height: 40px;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .drop-menu li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  
+  .drop-menu a {
+    padding: 10px 12px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #344563;
+    text-decoration: none;
+  }
+  
+  /*
+  ***MAIN PAGE***
+  */
+  
+  .main-page {
+    margin-top: 0;
+    background-image: url(../images/Header-llustration-desktop@2x.svg);
+  }
+  
+  .main-page h1 {
+    margin: 232px 260px 24px 260px;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 60px;
+    max-width: 920px;
+  }
+  
+  .main-page p {
+    max-width: 920px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #172b4d;
+  }
+  
+  .nav-bar-bot ul {
+    width: 200px;
+    justify-content: space-around;
+  }
+  
+  #more {
+    margin-top: 91px;
+    margin-bottom: 495px;
+  }
+  
+  /*
+      ***PROJECT PAGE***
+  */
+  
+  #separate {
+    display: none;
+  }
+  
+  .projects {
+    margin-top: 28px;
+  }
+  
+  /*
+    ***ABOUT PAGE***
+  */
+  
+  .about-page {
+    margin-top: 88px;
+    background-image: url(../images/desktop-about-right.svg);
+  }
+  
+  #main-about {
+    background-image: url(../images/illustration-about-me-2-desktop@2x.svg);
+    background-position: bottom 29px left;
+    margin-bottom: 28px;
+  }
+  
+  .about-page h3 {
+    margin-top: 78px;
+    margin-bottom: 24px;
+  }
+  
+  .about-page p {
+    max-width: 920px;
+    margin-left: 224px;
+    margin-right: 224px;
+  }
+  
+  .about-page button {
+    margin: 0;
+  }
+  
+  /*
+    ***CONTACT PAGE***
+  */
+  
+  .contact-page {
+    grid-template-columns: 1fr 2fr;
+    gap: 24px;
+    align-items: center;
+    width: 100vw;
+    padding: 148px 7% 225px 7%;
+    background-image: url(../images/contact-left-1@2x.svg), url(../images/contact-bottom-desktop@2x.svg), url(../images/contact-right@2x.svg);
+    background-position: bottom left, bottom center, bottom right;
+  }
+  
+  .contact-page h3 {
+    margin: 0 24px 0 0;
+  }
+  
+  #contact-form {
+    width: auto;
+    align-items: flex-start;
+  }
+  
+  #contact-form ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #contact-form button {
+    margin: 0;
+  }
+  
+  /*
+    ***FOOTER***
+  */
+  
+  footer { border-top: 1px solid #dfe1e6; }
+  
+  #my-email { display: none; }
+  
+  #ender { display: none; }
+}

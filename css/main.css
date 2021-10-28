@@ -102,7 +102,7 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 48px;
-  background-image: url(images/header-illsutration-mobile@2x.png);
+  background-image: url(../images/header-illsutration-mobile@2x.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -214,7 +214,7 @@ h3 {
   flex-direction: column;
   width: 329px;
   height: 476px;
-  background-image: url(images/Img\ Plaholder\ project.png);
+  background-image: url(../images/Img\ Plaholder\ project.png);
   background-repeat: no-repeat;
   justify-content: flex-end;
 }
@@ -300,7 +300,7 @@ button:active {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url(images/illustration\ 1-\ about\ me-mobile.svg);
+  background-image: url(../images/illustration\ 1-\ about\ me-mobile.svg);
   background-position: top right;
   background-repeat: no-repeat;
 }
@@ -311,7 +311,7 @@ button:active {
   align-items: center;
   margin: 0;
   margin-bottom: 33px;
-  background-image: url(images/illustration\ 2-about\ me\ mobile.svg);
+  background-image: url(../images/illustration\ 2-about\ me\ mobile.svg);
   background-position: bottom left;
   background-repeat: no-repeat;
 }
@@ -347,7 +347,7 @@ button:active {
   flex-direction: column;
   width: 327px;
   height: 352px;
-  background-image: url(images/Img\ Plaholder\ about.png);
+  background-image: url(../images/Img\ Plaholder\ about.png);
   background-repeat: no-repeat;
   align-items: center;
 }
@@ -405,7 +405,7 @@ button:active {
 .contact-page {
   display: grid;
   align-items: center;
-  background-image: url(images/Frame.svg);
+  background-image: url(../images/Frame.svg);
   background-repeat: no-repeat;
   background-position: right bottom;
 }
@@ -523,7 +523,7 @@ button:active {
 
   .main-page {
     margin-top: 0;
-    background-image: url(images/Header-llustration-desktop@2x.svg);
+    background-image: url(../images/Header-llustration-desktop@2x.svg);
   }
 
   .main-page h1 {
@@ -572,11 +572,11 @@ button:active {
 
   .about-page {
     margin-top: 88px;
-    background-image: url(images/desktop-about-right.svg);
+    background-image: url(../images/desktop-about-right.svg);
   }
 
   #main-about {
-    background-image: url(images/illustration-about-me-2-desktop@2x.svg);
+    background-image: url(../images/illustration-about-me-2-desktop@2x.svg);
     background-position: bottom 29px left;
     margin-bottom: 28px;
   }
@@ -606,7 +606,7 @@ button:active {
     align-items: center;
     width: 100vw;
     padding: 148px 7% 225px 7%;
-    background-image: url(images/contact-left-1@2x.svg), url(images/contact-bottom-desktop@2x.svg), url(images/contact-right@2x.svg);
+    background-image: url(../images/contact-left-1@2x.svg), url(../images/contact-bottom-desktop@2x.svg), url(../images/contact-right@2x.svg);
     background-position: bottom left, bottom center, bottom right;
   }
 
