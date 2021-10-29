@@ -152,10 +152,12 @@ button:active {
 
 @keyframes bounce {
   0% { transform: translateY(0); }
+
   50% {
     transform: translateY(-5px);
     scale: 1.15;
   }
+
   100% { transform: translateY(0); }
 }
 
@@ -390,7 +392,7 @@ button:active {
   transition: scale ease-in-out 0.1s;
 }
 
-.card ul {
+.card-ul {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 20px;
@@ -399,7 +401,7 @@ button:active {
   justify-content: center;
 }
 
-.card ul:hover {
+.card-ul:hover {
   scale: 1;
 }
 
