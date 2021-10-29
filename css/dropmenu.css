@@ -4,6 +4,7 @@
   top: 0;
   right: 0;
   left: 0;
+  z-index: 2;
   width: 100vw;
   height: 48px;
   background-color: white;
@@ -18,13 +19,10 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
+  /* transition: all ease-in-out 1.5s; */
 }
 
-.logo:hover {
-  animation: wobble 1.5s;
-}
-
-/* copied from https://www.tutorialspoint.com/Wobble-Animation-Effect-with-CSS */
+/* copied and adjusted from https://www.tutorialspoint.com/Wobble-Animation-Effect-with-CSS */
 @keyframes wobble {
   0% { transform: translateX(0%); }
   15% { transform: translateX(-12.5%) rotate(-5deg); }
@@ -34,6 +32,13 @@
   75% { transform: translateX(-2.5%) rotate(-1deg); }
   100% { transform: translateX(0%); }
 }
+
+.logo:hover {
+  scale: 1.1;
+  animation: wobble 1.5s;
+}
+
+
 
 /* used https://isabelcastillo.com/pure-css-mobile-toggle-menu to guide */
 .drop-menu,
@@ -60,6 +65,8 @@
 
 #open:hover {
   cursor: pointer;
+  scale: 1.1;
+  animation: wobble 1.5s;
 }
 
 #toggle-menu:checked + .drop-menu {
