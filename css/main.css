@@ -109,7 +109,6 @@ button:active {
 
 @keyframes underlineText {
   from { border-bottom: thin dotted #172b4d; }
-  50% { border-bottom: middle dashed; }
   to { border-bottom: thick solid #36b37e; }
 }
 
@@ -153,8 +152,11 @@ button:active {
 
 @keyframes bounce {
   0% { transform: translateY(0); }
-  50% { transform: translateY(-5px); scale: 1.15; }
-  100% { transform: translateY(0px); }
+  50% {
+    transform: translateY(-5px);
+    scale: 1.15;
+  }
+  100% { transform: translateY(0); }
 }
 
 #more {
@@ -176,8 +178,6 @@ button:active {
   scale: 1.25;
   border: 1px solid #008552;
 }
-
-
 
 /*
     ***PROJECT PAGE***
@@ -264,7 +264,7 @@ button:active {
   transition: scale ease-in-out 0.1s;
 }
 
-.proj-text h4:hover {
+.proj-text *:hover {
   scale: 1.1;
 }
 
@@ -272,6 +272,10 @@ button:active {
   display: flex;
   width: 100%;
   justify-content: space-around;
+}
+
+.proj-text ul:hover {
+  scale: 1;
 }
 
 .proj-text li {
@@ -286,10 +290,6 @@ button:active {
   letter-spacing: 0.03em;
   color: #3a4a42;
   transition: scale ease-in-out 0.1s;
-}
-
-.proj-text li:hover {
-  scale: 1.05;
 }
 
 /*
@@ -374,7 +374,7 @@ button:active {
   transition: scale ease-in-out 0.1s;
 }
 
-.card img:hover {
+.card *:hover {
   scale: 1.1;
 }
 
@@ -390,10 +390,6 @@ button:active {
   transition: scale ease-in-out 0.1s;
 }
 
-.card h4:hover {
-  scale: 1.1;
-}
-
 .card ul {
   display: flex;
   flex-wrap: wrap;
@@ -401,6 +397,10 @@ button:active {
   margin-top: 0%;
   width: 100%;
   justify-content: center;
+}
+
+.card ul:hover {
+  scale: 1;
 }
 
 .card li {
@@ -416,10 +416,6 @@ button:active {
   letter-spacing: 0.03em;
   color: #36b37e;
   transition: scale ease-in-out 0.1s;
-}
-
-.card li:hover {
-  scale: 1.1;
 }
 
 /*
@@ -490,7 +486,7 @@ button:active {
   border: 2px solid #008552;
 }
 
-#contact-form input:focus, 
+#contact-form input:focus,
 #comment:focus {
   scale: 1.02;
 }
