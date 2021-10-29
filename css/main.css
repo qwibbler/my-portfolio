@@ -148,13 +148,12 @@ button:active {
 }
 
 .nav-bar-bot a:hover {
-  animation-duration: 0.5s;
-  animation-name: bounce;
+  animation: bounce 1.2s ease-in-out infinite;
 }
 
 @keyframes bounce {
   0% { transform: translateY(0); }
-  50% { transform: translateY(-7px); }
+  50% { transform: translateY(-5px); scale: 1.15; }
   100% { transform: translateY(0px); }
 }
 
@@ -172,11 +171,16 @@ button:active {
 }
 
 #more-v:hover {
-  background-color: #36b37f;
-  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
-  scale: 1.25;
-  border: 1px solid #008552;
+  animation: growGreen 2s ease-out infinite;
 }
+
+@keyframes growGreen {
+  75% {
+    background-color: #36b37f;
+    box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+    scale: 1.25;
+    border: 1px solid #008552;
+  }
 
 /*
     ***PROJECT PAGE***
