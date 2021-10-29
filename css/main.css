@@ -58,88 +58,19 @@ button {
   letter-spacing: 0.03em;
   color: #fff;
   margin-bottom: 24px;
+  transition: all ease-in-out 0.1s;
 }
 
 button:hover {
   cursor: pointer;
-  background-color: #36b37f;
+  background-color: #2d966a;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  scale: 1.1;
 }
 
 button:active {
   background-color: #008552;
 }
-
-/*
-  ***TOP NAV***
-*/
-
-/* .top-nav {
-  display: block;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  width: 100vw;
-  height: 48px;
-  background-color: white;
-}
-
-.logo {
-  position: fixed;
-  left: 0;
-  margin: 10px 24px;
-  color: #28352f;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 28px;
-}
-
-.drop-menu,
-#toggle-menu {
-  display: none;
-}
-
-.top-nav label {
-  display: flex;
-  text-align: center;
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 24px;
-  height: 24px;
-  margin: 10px 24px;
-}
-
-#toggle-menu:checked + .drop-menu {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  top: 0;
-  right: 0;
-  left: 0;
-  width: 100vw;
-  height: 85vh;
-  margin-top: 48px;
-  padding: 0;
-  background-color: white;
-  border-radius: 0 0 50px 50px;
-  box-shadow: 0 15vh #e5e5e5, 0 48px 48px rgba(37, 47, 137, 0.08);
-}
-
-.drop-menu li {
-  margin: 40px;
-}
-
-.drop-menu a {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 44px;
-  color: #3a4a42;
-} */
 
 /*
   ***MAIN PAGE***
@@ -168,7 +99,25 @@ button:active {
   color: #172b4d;
 }
 
-.main-page span { color: #36b37e; }
+#my-name {
+  transition: all 0.2s ease-in-out;
+}
+
+#my-name:hover {
+  animation: underlineText 0.5s ease-in-out alternate infinite, colorText 0.5s ease-in-out alternate infinite;
+}
+
+@keyframes underlineText {
+  from { border-bottom: thin dotted #172b4d; }
+  to { border-bottom: thick solid #36b37e; }
+}
+
+@keyframes colorText {
+  from { color: #172b4d; }
+  to { color: #36b37e; }
+}
+
+#developer { color: #36b37e; }
 
 .main-page p {
   margin: 24px;
@@ -198,14 +147,18 @@ button:active {
 }
 
 .nav-bar-bot a:hover {
-  animation-duration: 0.5s;
-  animation-name: bounce;
+  animation: bounce 1.2s ease-in-out infinite;
 }
 
 @keyframes bounce {
-  0%,
+  0% { transform: translateY(0); }
+
+  50% {
+    transform: translateY(-5px);
+    scale: 1.15;
+  }
+
   100% { transform: translateY(0); }
-  50% { transform: translateY(-5px); }
 }
 
 #more {
@@ -249,13 +202,18 @@ button:active {
   margin-bottom: 24px;
 }
 
-#separate {
+.separate {
   margin-bottom: 62px;
   width: 48px;
   height: 4px;
   background: #36b37e;
   border: none;
   border-radius: 24px;
+  transition: all ease-in-out 1s;
+}
+
+#recent-works:hover + .separate {
+  width: 341px;
 }
 
 .projects {
@@ -277,6 +235,11 @@ button:active {
   background-position: top;
   background-size: contain;
   justify-content: flex-end;
+  transition: scale ease-in-out 0.1s;
+}
+
+.proj:hover {
+  scale: 1.05;
 }
 
 .proj-text {
@@ -300,12 +263,21 @@ button:active {
   align-items: center;
   text-align: center;
   color: #3a4a42;
+  transition: scale ease-in-out 0.1s;
+}
+
+.proj-text *:hover {
+  scale: 1.1;
 }
 
 .proj-text ul {
   display: flex;
   width: 100%;
   justify-content: space-around;
+}
+
+.proj-text ul:hover {
+  scale: 1;
 }
 
 .proj-text li {
@@ -319,6 +291,7 @@ button:active {
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #3a4a42;
+  transition: scale ease-in-out 0.1s;
 }
 
 /*
@@ -352,6 +325,10 @@ button:active {
   margin-bottom: 12px;
 }
 
+#about-me:hover + .separate {
+  width: 190px;
+}
+
 #main-about p {
   margin-top: 0;
   padding: 12px;
@@ -381,6 +358,11 @@ button:active {
   background-image: url(../images/Img\ Plaholder\ about.png);
   background-repeat: no-repeat;
   align-items: center;
+  transition: scale ease-in-out 0.1s;
+}
+
+.card:hover {
+  scale: 1.05;
 }
 
 .card img {
@@ -391,6 +373,11 @@ button:active {
   padding: 16px;
   border-radius: 50%;
   box-shadow: 0 16px 24px rgba(37, 47, 137, 0.08);
+  transition: scale ease-in-out 0.1s;
+}
+
+.card *:hover {
+  scale: 1.1;
 }
 
 .card h4 {
@@ -402,9 +389,10 @@ button:active {
   line-height: 32px;
   text-align: center;
   color: #344563;
+  transition: scale ease-in-out 0.1s;
 }
 
-.card ul {
+.card-ul {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 20px;
@@ -413,7 +401,11 @@ button:active {
   justify-content: center;
 }
 
-.skill-cards li {
+.card-ul:hover {
+  scale: 1;
+}
+
+.card li {
   padding: 12px;
   margin: 4px;
   background: #fff;
@@ -425,6 +417,7 @@ button:active {
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #36b37e;
+  transition: scale ease-in-out 0.1s;
 }
 
 /*
@@ -464,6 +457,17 @@ button:active {
   border-radius: 4px;
   padding: 15px 16px;
   border: 1px solid #d0d9d4;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #091e42;
+  transition: all 0.2s ease-in-out;
+}
+
+#username {
+  text-transform: capitalize;
 }
 
 #comment {
@@ -477,7 +481,16 @@ button:active {
   font-weight: normal;
   font-size: 15px;
   line-height: 24px;
-  color: #091e42;
+}
+
+#contact-form input:hover,
+#comment:hover {
+  border: 2px solid #008552;
+}
+
+#contact-form input:focus,
+#comment:focus {
+  scale: 1.02;
 }
 
 /*

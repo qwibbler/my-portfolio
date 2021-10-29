@@ -78,8 +78,8 @@
       ***PROJECT PAGE***
   */
 
-  #separate {
-    display: none;
+  .separate {
+    margin-bottom: 0;
   }
 
   .projects {
