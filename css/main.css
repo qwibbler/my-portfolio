@@ -58,88 +58,19 @@ button {
   letter-spacing: 0.03em;
   color: #fff;
   margin-bottom: 24px;
+  transition: all ease-in-out 0.1s;
 }
 
 button:hover {
   cursor: pointer;
   background-color: #36b37f;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  scale: 1.1;
 }
 
 button:active {
   background-color: #008552;
 }
-
-/*
-  ***TOP NAV***
-*/
-
-/* .top-nav {
-  display: block;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  width: 100vw;
-  height: 48px;
-  background-color: white;
-}
-
-.logo {
-  position: fixed;
-  left: 0;
-  margin: 10px 24px;
-  color: #28352f;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 28px;
-}
-
-.drop-menu,
-#toggle-menu {
-  display: none;
-}
-
-.top-nav label {
-  display: flex;
-  text-align: center;
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 24px;
-  height: 24px;
-  margin: 10px 24px;
-}
-
-#toggle-menu:checked + .drop-menu {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  top: 0;
-  right: 0;
-  left: 0;
-  width: 100vw;
-  height: 85vh;
-  margin-top: 48px;
-  padding: 0;
-  background-color: white;
-  border-radius: 0 0 50px 50px;
-  box-shadow: 0 15vh #e5e5e5, 0 48px 48px rgba(37, 47, 137, 0.08);
-}
-
-.drop-menu li {
-  margin: 40px;
-}
-
-.drop-menu a {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 44px;
-  color: #3a4a42;
-} */
 
 /*
   ***MAIN PAGE***
@@ -203,9 +134,9 @@ button:active {
 }
 
 @keyframes bounce {
-  0%,
-  100% { transform: translateY(0); }
-  50% { transform: translateY(-5px); }
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-7px); }
+  100% { transform: translateY(0px); }
 }
 
 #more {
@@ -277,6 +208,11 @@ button:active {
   background-position: top;
   background-size: contain;
   justify-content: flex-end;
+  transition: scale ease-in-out 0.1s;
+}
+
+.proj:hover {
+  scale: 1.05;
 }
 
 .proj-text {
@@ -300,6 +236,11 @@ button:active {
   align-items: center;
   text-align: center;
   color: #3a4a42;
+  transition: scale ease-in-out 0.1s;
+}
+
+.proj-text h4:hover {
+  scale: 1.1;
 }
 
 .proj-text ul {
@@ -319,9 +260,10 @@ button:active {
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #3a4a42;
+  transition: scale ease-in-out 0.1s;
 }
 
-.proj:hover {
+.proj-text li:hover {
   scale: 1.05;
 }
 
@@ -385,6 +327,11 @@ button:active {
   background-image: url(../images/Img\ Plaholder\ about.png);
   background-repeat: no-repeat;
   align-items: center;
+  transition: scale ease-in-out 0.1s;
+}
+
+.card:hover {
+  scale: 1.05;
 }
 
 .card img {
@@ -395,6 +342,11 @@ button:active {
   padding: 16px;
   border-radius: 50%;
   box-shadow: 0 16px 24px rgba(37, 47, 137, 0.08);
+  transition: scale ease-in-out 0.1s;
+}
+
+.card img:hover {
+  scale: 1.1;
 }
 
 .card h4 {
@@ -406,6 +358,11 @@ button:active {
   line-height: 32px;
   text-align: center;
   color: #344563;
+  transition: scale ease-in-out 0.1s;
+}
+
+.card h4:hover {
+  scale: 1.1;
 }
 
 .card ul {
@@ -417,7 +374,7 @@ button:active {
   justify-content: center;
 }
 
-.skill-cards li {
+.card li {
   padding: 12px;
   margin: 4px;
   background: #fff;
@@ -429,6 +386,11 @@ button:active {
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #36b37e;
+  transition: scale ease-in-out 0.1s;
+}
+
+.card li:hover {
+  scale: 1.1;
 }
 
 /*
