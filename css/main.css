@@ -321,6 +321,10 @@ button:active {
   color: #3a4a42;
 }
 
+.proj:hover {
+  scale: 1.05;
+}
+
 /*
     ***ABOUT PAGE***
 */
