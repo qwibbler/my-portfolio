@@ -63,7 +63,7 @@ button {
 
 button:hover {
   cursor: pointer;
-  background-color: #36b37f;
+  background-color: #2d966a;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
   scale: 1.1;
 }
@@ -99,7 +99,26 @@ button:active {
   color: #172b4d;
 }
 
-.main-page span { color: #36b37e; }
+#my-name {
+  transition: all 0.2s ease-in-out;
+}
+
+#my-name:hover {
+  animation: underlineText 0.5s ease-in-out alternate infinite, colorText 0.5s ease-in-out alternate infinite;
+}
+
+@keyframes underlineText {
+  from { border-bottom: thin dotted #172b4d; }
+  50% { border-bottom: middle dashed; }
+  to { border-bottom: thick solid #36b37e; }
+}
+
+@keyframes colorText {
+  from { color: #172b4d; }
+  to { color: #36b37e; }
+}
+
+#developer { color: #36b37e; }
 
 .main-page p {
   margin: 24px;
@@ -180,13 +199,18 @@ button:active {
   margin-bottom: 24px;
 }
 
-#separate {
+.separate {
   margin-bottom: 62px;
   width: 48px;
   height: 4px;
   background: #36b37e;
   border: none;
   border-radius: 24px;
+  transition: all ease-in-out 1s;
+}
+
+#recent-works:hover + .separate {
+  width: 341px;
 }
 
 .projects {
@@ -296,6 +320,10 @@ button:active {
 #about-me {
   margin-top: 56px;
   margin-bottom: 12px;
+}
+
+#about-me:hover + .separate {
+  width: 190px;
 }
 
 #main-about p {
@@ -430,6 +458,13 @@ button:active {
   border-radius: 4px;
   padding: 15px 16px;
   border: 1px solid #d0d9d4;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #091e42;
+  transition: all 0.2s ease-in-out;
 }
 
 #comment {
@@ -443,7 +478,22 @@ button:active {
   font-weight: normal;
   font-size: 15px;
   line-height: 24px;
-  color: #091e42;
+}
+
+#contact-form input:hover,
+#comment:hover {
+  border: 2px solid #008552;
+}
+
+#comment:hover::placeholder {
+  animation: textToRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes textToRight {
+  from { margin-left: 0%; }
+  to { margin-left: 100%; }
 }
 
 /*
