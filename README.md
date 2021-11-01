@@ -13,10 +13,10 @@
 
 - HTML and CSS
 
-<!-- ## Live Demo
+## Live Demo
 
-[Live Demo Link](https://livedemo.com)
- -->
+[Live Demo Link](https://qwibbler.github.io/my-portfolio/)
+
 
 
 ## Author
