@@ -2,7 +2,7 @@
 
 # My Portfolio
 
-> This is a practice portfolio that I am building to learn the required coding skills for building a basic website for both desktop and mobile screens, and to begin setting up my very own portfolio. I will be expanding on this in the various tutorial excersizes as I progress along Microverse. You can find this websilte at https://qwibbler.github.io/my-portfolio/
+> This is a practice portfolio that I am building to learn the required coding skills for building a basic website for both desktop and mobile screens, and to begin setting up my very own portfolio. I will be expanding on this in the various tutorial excersizes as I progress along Microverse. You can find this websilte [here](https://qwibbler.github.io/my-portfolio/)
 
 > ![screenshot](images/Screenshot-desktop.png)
 > ![screenshot](images/Screenshot-mobile.png)
