@@ -63,7 +63,7 @@ button {
 
 button:hover {
   cursor: pointer;
-  background-color: #2d966a;
+  background-color: #008552;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
   scale: 1.1;
 }
@@ -416,7 +416,7 @@ button:active {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: #36b37e;
+  color: #008552;
   transition: scale ease-in-out 0.1s;
 }
 
