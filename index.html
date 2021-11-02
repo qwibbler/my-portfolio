@@ -16,9 +16,9 @@
     <meta property="og:url" content="#">
     <meta property="og:description" content="Setting up a default portfolio according to template.">
 
-    <!-- <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/dropmenu.css">
-    <link rel="stylesheet" href="css/media-query.css"> -->
+    <link rel="stylesheet" href="css/media-query.css">
     <link rel="license" href="LICENSE">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,8 +34,6 @@
 
         gtag('config', 'G-Q357Z2DNB4');
     </script>
-
-    <!-- Change for the sake of change -->
 </head>
 
 <body>
@@ -209,6 +207,7 @@
                     </div>
                 </div>
             </section>
+
             <!-- Contact Page -->
             <section class="contact-page" id="contact-me">
                 <header>
@@ -216,9 +215,17 @@
                 </header>
                 <form id="contact-form" action="https://formspree.io/f/moqyzrzd" method="post">
                     <ul>
-                        <li><input type="text" id="username" name="user-name" placeholder="Full Name" maxlength="30" required></li>
-                        <li><input type="email" name="user-email" placeholder="Email address" required></li>
-                        <li><textarea name="msg" id="comment" maxlength="500" placeholder="Enter text here" required></textarea></li>
+                        <li>
+                            <label class="form-label" for="username">Name:</label>
+                            <input type="text" id="username" name="user-name" placeholder="Full Name" maxlength="30" required>
+                        </li>
+                        <li>
+                            <label class="form-label" for="useremail">Email:</label>
+                            <input type="email" id="useremail" name="user-email" placeholder="Email address" required>
+                        </li>
+                        <li>
+                            <label class="form-label" for="comment">Message:</label>
+                            <textarea name="msg" id="comment" maxlength="500" placeholder="Enter text here" required></textarea></li>
                     </ul>
                     <button>Get in touch</button>
                 </form>
