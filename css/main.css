@@ -73,7 +73,7 @@ button:active {
 }
 
 /*
-  ***DROPMENU***
+  ***NAVBAR***
 */
 
 .top-nav {
@@ -117,12 +117,11 @@ button:active {
 }
 
 /* used https://isabelcastillo.com/pure-css-mobile-toggle-menu to guide */
-.drop-menu,
-#toggle-menu {
+.drop-menu {
   display: none;
 }
 
-#open {
+.dropbtn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -133,6 +132,7 @@ button:active {
   height: 24px;
   margin: 10px 24px;
   color: #28352f;
+  background-color: white;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -140,12 +140,17 @@ button:active {
   transition: all ease-in 0.5s;
 }
 
-#open:hover {
+.dropbtn:hover {
   cursor: pointer;
   scale: 1.3;
   animation: wobble 1.5s;
+  background-color: white;
+  box-shadow: none;
 }
 
+.dropbtn:focus {outline:0;}
+
+/* 
 #toggle-menu:checked + .drop-menu {
   display: flex;
   flex-direction: column;
@@ -161,11 +166,7 @@ button:active {
   background-color: white;
   border-radius: 0 0 50px 50px;
   box-shadow: 0 15vh #e5e5e5, 0 48px 48px rgba(37, 47, 137, 0.08);
-}
-
-#toggle-menu:checked + .logo {
-  display: none;
-}
+} */
 
 .drop-menu li {
   margin: 40px;
