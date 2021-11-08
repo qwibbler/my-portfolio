@@ -150,8 +150,8 @@ button:active {
 
 .dropbtn:focus {outline:0;}
 
-/* 
-#toggle-menu:checked + .drop-menu {
+
+.drop-menu {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -166,7 +166,26 @@ button:active {
   background-color: white;
   border-radius: 0 0 50px 50px;
   box-shadow: 0 15vh #e5e5e5, 0 48px 48px rgba(37, 47, 137, 0.08);
-} */
+} 
+
+#closeside_menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 24px;
+  margin: 10px 24px;
+  color: #67798e;
+  background-color: white;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  transition: all ease-in 0.5s;
+}
 
 .drop-menu li {
   margin: 40px;
