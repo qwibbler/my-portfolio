@@ -5,13 +5,13 @@
     height: 0;
   }
 
-  .logo,
+  #logo,
   #open,
   #toggle-menu {
     display: none;
   }
 
-  .drop-menu {
+  #drop-menu {
     display: flex;
     width: auto;
     height: 40px;
@@ -19,13 +19,13 @@
     list-style: none;
   }
 
-  .drop-menu li {
+  #drop-menu li {
     display: flex;
     justify-content: center;
     margin: 0;
   }
 
-  .drop-menu a {
+  #drop-menu a {
     padding: 10px 12px;
     font-family: 'Inter', sans-serif;
     font-style: normal;

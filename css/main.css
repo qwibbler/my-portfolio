@@ -88,7 +88,7 @@ button:active {
   background-color: white;
 }
 
-.logo {
+#logo {
   position: fixed;
   left: 0;
   margin: 10px 24px;
@@ -111,17 +111,12 @@ button:active {
   100% { transform: translateX(0%); }
 }
 
-.logo:hover {
+#logo:hover {
   scale: 1.3;
   animation: wobble 1.5s;
 }
 
-/* used https://isabelcastillo.com/pure-css-mobile-toggle-menu to guide */
-.drop-menu {
-  display: none;
-}
-
-.dropbtn {
+#dropbtn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -140,7 +135,7 @@ button:active {
   transition: all ease-in 0.5s;
 }
 
-.dropbtn:hover {
+#dropbtn:hover {
   cursor: pointer;
   scale: 1.3;
   animation: wobble 1.5s;
@@ -148,10 +143,9 @@ button:active {
   box-shadow: none;
 }
 
-.dropbtn:focus {outline:0;}
+#dropbtn:focus {outline:0;}
 
-
-.drop-menu {
+#drop-menu {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -160,16 +154,17 @@ button:active {
   left: 0;
   bottom: 57px;
   width: 100vw;
-  height: 85vh;
+  height: 0vh;
   margin-top: 48px;
   padding: 0;
   background-color: white;
   border-radius: 0 0 50px 50px;
   box-shadow: 0 15vh #e5e5e5, 0 48px 48px rgba(37, 47, 137, 0.08);
+  transition: 0.5s;
 } 
 
 #closeside_menu {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   position: absolute;
@@ -187,11 +182,11 @@ button:active {
   transition: all ease-in 0.5s;
 }
 
-.drop-menu li {
+#drop-menu li {
   margin: 40px;
 }
 
-.drop-menu a {
+#drop-menu a {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -201,8 +196,12 @@ button:active {
   transition: scale 0.1s ease-out;
 }
 
-.drop-menu a:hover {
+#drop-menu a:hover {
   scale: 1.5;
+}
+
+.menuItem {
+  display: none;
 }
 
 /*
