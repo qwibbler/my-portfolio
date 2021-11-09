@@ -41,16 +41,14 @@
         <!-- Header and Nav menu -->
         <header>
             <nav class="top-nav">
-                <a id="logo" href="#first-page">Welcome</a>
-                <!-- <label for="toggle-menu" id="open" aria-label="Menu">&#9776;</label>
-                <input id="toggle-menu" type="checkbox" /> -->
-                <button onclick="openNav()" id="dropbtn">&#9776;</button>
-                <button onclick="closeNav()" id="closeside_menu"><b>X</b></button>
+                <a id="logo" class="mobile-only" href="#first-page">Welcome</a>
+                <button class="mobile-only" id="dropbtn" onclick="openNav()">&#9776;</button>
+                <button class="mobile-only" id="closeside_menu" onclick="closeNav()"><b>X</b></button>
                 <ul id="drop-menu" class="drop-menu">
-                    <li class="menuItem" onclick="closeNav()"><a class="menuItem" href="#first-page">Hello</a></li>
-                    <li class="menuItem" onclick="closeNav()"><a class="menuItem" href="#second-page">Portfolio</a></li>
-                    <li class="menuItem" onclick="closeNav()"><a class="menuItem" href="#main-about">About</a></li>
-                    <li class="menuItem" onclick="closeNav()"><a class="menuItem" href="#contact-me">Contact</a></li>
+                    <li onclick="closeNav()"><a class="menuItem" href="#first-page">Hello</a></li>
+                    <li onclick="closeNav()"><a class="menuItem" href="#second-page">Portfolio</a></li>
+                    <li onclick="closeNav()"><a class="menuItem" href="#main-about">About</a></li>
+                    <li onclick="closeNav()"><a class="menuItem" href="#contact-me">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -256,8 +254,8 @@
                     </li>
                 </ul>
             </nav>
-            <a id="my-email" href="#">hmemaz@gmail.com</a>
-            <hr id="ender">
+            <a class="my-email mobile-only" href="#">hmemaz@gmail.com</a>
+            <hr class="ender mobile-only">
         </footer>
     </div>
 </body>

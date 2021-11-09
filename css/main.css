@@ -143,26 +143,6 @@ button:active {
   box-shadow: none;
 }
 
-#dropbtn:focus {outline:0;}
-
-#drop-menu {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 57px;
-  width: 100vw;
-  height: 0vh;
-  margin-top: 48px;
-  padding: 0;
-  background-color: white;
-  border-radius: 0 0 50px 50px;
-  box-shadow: 0 15vh #e5e5e5, 0 48px 48px rgba(37, 47, 137, 0.08);
-  transition: 0.5s;
-} 
-
 #closeside_menu {
   display: none;
   align-items: center;
@@ -182,11 +162,39 @@ button:active {
   transition: all ease-in 0.5s;
 }
 
-#drop-menu li {
-  margin: 40px;
+#closeside_menu:hover {
+  cursor: pointer;
+  scale: 1.3;
+  animation: wobble 1.5s;
+  background-color: white;
+  box-shadow: none;
 }
 
-#drop-menu a {
+.drop-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 57px;
+  width: 100vw;
+  height: 0;
+  margin-top: 48px;
+  padding: 0;
+  background-color: white;
+  border-radius: 0 0 50px 50px;
+  box-shadow: 0 15vh #e5e5e5, 0 48px 48px rgba(37, 47, 137, 0.08);
+  transition: 0.5s;
+}
+
+.drop-menu li {
+  margin: 0 50px;
+  /* width: ; */
+}
+
+.drop-menu a {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -196,8 +204,9 @@ button:active {
   transition: scale 0.1s ease-out;
 }
 
-#drop-menu a:hover {
-  scale: 1.5;
+.drop-menu a:hover {
+  text-transform: uppercase;
+  text-shadow: 2px 2px rgba(37, 47, 137, 0.5);
 }
 
 .menuItem {
@@ -635,7 +644,7 @@ button:active {
   align-items: center;
 }
 
-#my-email {
+.my-email {
   text-align: center;
   width: 100%;
   height: 189px;
@@ -646,7 +655,7 @@ button:active {
   color: #42526e;
 }
 
-#ender {
+.ender {
   margin: 134px auto 8px auto;
   background: #0d151e;
   border-radius: 10px;

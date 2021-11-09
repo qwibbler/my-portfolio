@@ -1,40 +1,35 @@
 @media (min-width: 1080px) {
+
   .top-nav {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     height: 0;
   }
 
-  #logo,
-  #open,
-  #toggle-menu {
-    display: none;
-  }
-
-  #drop-menu {
-    display: flex;
+  .drop-menu {
+    flex-direction: row;
+    justify-content: center;
     width: auto;
     height: 40px;
     padding: 0;
-    list-style: none;
+    margin-top: 0;
+    box-shadow: none;
   }
 
-  #drop-menu li {
+  .drop-menu li {
     display: flex;
-    justify-content: center;
     margin: 0;
   }
 
-  #drop-menu a {
+  .drop-menu a {
+    display: initial;
     padding: 10px 12px;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 600;
     font-size: 15px;
     line-height: 20px;
     text-align: center;
     color: #344563;
-    text-decoration: none;
+    width: auto;
   }
 
   /*
@@ -155,7 +150,15 @@
 
   footer { border-top: 1px solid #dfe1e6; }
 
-  #my-email { display: none; }
+  .my-email { display: none; }
 
-  #ender { display: none; }
+  .ender { display: none; }
+
+  /* Final */
+  .mobile-only {
+    display: none;
+  }
+  #dropbtn {
+    display: none;
+  }
 }
