@@ -9,7 +9,7 @@
     justify-content: center;
     height: 0;
   }
-  
+
   .drop-menu {
     flex-direction: row;
     justify-content: center;
@@ -156,7 +156,4 @@
   .my-email { display: none; }
 
   .ender { display: none; }
-
-  /* Final */
-
 }

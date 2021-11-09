@@ -29,6 +29,5 @@ function closeNav() {
   }
 }
 
-document.getElementById('dropbtn').addEventListener('click', openNav)
-// ('.dropbtn').on('click', openNav)
-document.getElementById('closeside_menu').addEventListener('click', closeNav)
+document.getElementById('dropbtn').addEventListener('click', openNav);
+document.getElementById('closeside_menu').addEventListener('click', closeNav);
