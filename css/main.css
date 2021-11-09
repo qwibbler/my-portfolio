@@ -86,6 +86,7 @@ button:active {
   width: 100vw;
   height: 48px;
   background-color: white;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
 }
 
 #logo {
@@ -185,13 +186,11 @@ button:active {
   padding: 0;
   background-color: white;
   border-radius: 0 0 50px 50px;
-  box-shadow: 0 15vh #e5e5e5, 0 48px 48px rgba(37, 47, 137, 0.08);
   transition: 0.5s;
 }
 
 .drop-menu li {
   margin: 0 50px;
-  /* width: ; */
 }
 
 .drop-menu a {
@@ -204,13 +203,13 @@ button:active {
   transition: scale 0.1s ease-out;
 }
 
-.drop-menu a:hover {
-  text-transform: uppercase;
-  text-shadow: 2px 2px rgba(37, 47, 137, 0.5);
-}
-
 .menuItem {
   display: none;
+}
+
+.menuItem:hover {
+  text-transform: uppercase;
+  text-shadow: 2px 2px rgba(37, 47, 137, 0.5);
 }
 
 /*

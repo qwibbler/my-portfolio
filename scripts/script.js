@@ -1,9 +1,11 @@
 const items = document.getElementsByClassName('menuItem');
-const windowSize = window.matchMedia("(max-width: 1080px)")
+const windowSize = window.matchMedia('(max-width: 1080px)');
 
+/* exported function */
 function openNav() {
   if (windowSize.matches) {
     document.getElementById('drop-menu').style.height = '85vh';
+    document.getElementById('drop-menu').style.boxShadow = '0 15vh #e5e5e5, 0 48px 48px rgba(37, 47, 137, 0.08)';
     document.getElementById('closeside_menu').style.display = 'flex';
     document.getElementById('dropbtn').style.display = 'none';
     document.getElementById('logo').style.display = 'none';
@@ -13,9 +15,11 @@ function openNav() {
   }
 }
 
+/* exported function */
 function closeNav() {
   if (windowSize.matches) {
     document.getElementById('drop-menu').style.height = '0';
+    document.getElementById('drop-menu').style.boxShadow = 'none';
     document.getElementById('closeside_menu').style.display = 'none';
     document.getElementById('dropbtn').style.display = 'flex';
     document.getElementById('logo').style.display = 'initial';
@@ -24,3 +28,7 @@ function closeNav() {
     }
   }
 }
+
+document.getElementById('dropbtn').addEventListener('click', openNav)
+// ('.dropbtn').on('click', openNav)
+document.getElementById('closeside_menu').addEventListener('click', closeNav)

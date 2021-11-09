@@ -1,4 +1,7 @@
 @media (min-width: 1080px) {
+  .mobile-only {
+    display: none;
+  }
 
   .top-nav {
     display: flex;
@@ -6,7 +9,7 @@
     justify-content: center;
     height: 0;
   }
-
+  
   .drop-menu {
     flex-direction: row;
     justify-content: center;
@@ -14,7 +17,7 @@
     height: 40px;
     padding: 0;
     margin-top: 0;
-    box-shadow: none;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   }
 
   .drop-menu li {
@@ -155,10 +158,5 @@
   .ender { display: none; }
 
   /* Final */
-  .mobile-only {
-    display: none;
-  }
-  #dropbtn {
-    display: none;
-  }
+
 }
