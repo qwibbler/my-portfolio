@@ -27,7 +27,7 @@ h2 {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 130%;
   text-align: center;
   color: #172b4d;
@@ -50,7 +50,7 @@ button {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 1.0625rem;
   line-height: 150%;
   display: flex;
   align-items: center;
@@ -96,7 +96,7 @@ button:active {
   color: #28352f;
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 140%;
   transition: all ease-in 0.5s;
 }
@@ -131,7 +131,7 @@ button:active {
   background-color: white;
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 140%;
   transition: all ease-in 0.5s;
 }
@@ -150,7 +150,7 @@ button:active {
   background-color: white;
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 140%;
   transition: all ease-in 0.5s;
 }
@@ -190,7 +190,7 @@ button:active {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 137%;
   color: #3a4a42;
   transition: all 0.1s ease-out;
@@ -230,7 +230,7 @@ button:active {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 130%;
   text-align: center;
   color: #172b4d;
@@ -261,7 +261,7 @@ button:active {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 140%;
   text-align: center;
   color: #172b4d;
@@ -394,7 +394,7 @@ button:active {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 133%;
   display: flex;
   align-items: center;
@@ -424,7 +424,7 @@ button:active {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 133%;
   letter-spacing: 0.03em;
   color: #3a4a42;
@@ -433,10 +433,21 @@ button:active {
 
 /* ***POPUP*** */
 
+.proj_background {
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #c1C7d0;
+  mix-blend-mode: multiply;
+}
+
 .proj_card {
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
   overflow: ;
   /* height: 95vh;
   width: 95vw; */
@@ -445,6 +456,7 @@ button:active {
   right: 16px;
   bottom: 16px;
   left: 16px;
+  border-radius: 16px;
   background-color: red;
 }
 
@@ -470,7 +482,7 @@ button:active {
   font-family: Inter;
   font-style: normal;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 137%;
   color: #172b4d;
   margin: 12px 16px ;
@@ -489,7 +501,7 @@ button:active {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 133%;
   letter-spacing: 0.03em;
   color: #3a4a42;
@@ -501,7 +513,7 @@ button:active {
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
   color: #344563;
   margin-left: 16px;
@@ -511,18 +523,23 @@ button:active {
 .proj_see {
   display: flex;
   justify-content: space-between;
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .proj_see button {
   display: flex;
   justify-content: space-around;
   min-width: 141px;
+  margin: 0 6px 20px 6px;
 }
 
 .proj_see img {
   margin: 0 14px;
+}
+
+.popup {
+  display: none;
 }
 
 /*
@@ -566,7 +583,7 @@ button:active {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 133%;
   text-align: center;
   color: #42526e;
@@ -616,7 +633,7 @@ button:active {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 133%;
   text-align: center;
   color: #344563;
@@ -644,7 +661,7 @@ button:active {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 133%;
   letter-spacing: 0.03em;
   color: #008552;
@@ -691,7 +708,7 @@ button:active {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 150%;
   color: #091e42;
   transition: all 0.2s ease-in-out;
@@ -710,7 +727,7 @@ button:active {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 150%;
 }
 
@@ -740,7 +757,7 @@ button:active {
   height: 189px;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 133%;
   color: #42526e;
 }
