@@ -431,6 +431,80 @@ button:active {
   transition: scale ease-in-out 0.1s;
 }
 
+.proj_card {
+  position: absolute;
+  height: 95vh;
+  width: 95vw;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+}
+
+/* .close_card {
+  position: relative;
+  top: 38px;
+  right: 38px;
+  color: #67798e;
+  background-color: none;
+} */
+
+.proj_img {
+  margin: 16px;
+}
+
+.proj_title {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.proj_langs ul {
+  display: flex;
+  margin: 16px;
+}
+.proj_langs li {
+  display: inline;
+  padding: 8px 12px;
+  background: #ebf0ee;
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #3a4a42;
+  transition: scale ease-in-out 0.1s;
+  margin-left: 5px;
+}
+
+.proj_desc {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.proj_see {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.proj_see button {
+  width: 40%;
+}
+
 /*
     ***ABOUT PAGE***
 */
