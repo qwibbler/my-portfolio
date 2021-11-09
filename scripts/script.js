@@ -31,3 +31,6 @@ function closeNav() {
 
 document.getElementById('dropbtn').addEventListener('click', openNav);
 document.getElementById('closeside_menu').addEventListener('click', closeNav);
+for (let k = 0; k < items.length; k += 1) {
+  items[k].addEventListener('click', closeNav);
+}
