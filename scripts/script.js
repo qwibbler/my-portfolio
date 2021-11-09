@@ -46,42 +46,42 @@ const projectsInfo = [
     title: 'Multi-Post Stories Gain+Glory',
     desc: "Lorem Ipsum",
     langs: ['Ruby on rails', 'CSS', 'Javascript', 'HTML'],
-    imgCard: '(../images/Img\ Plaholder\ project.png)',
+    imgCard: "url('../images/Img\ Plaholder\ project.png')",
     imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
   },
   {
     title: 'Multi-Post Stories Gain+Glory',
     desc: "Lorem Ipsum",
     langs: ['Ruby on rails', 'CSS', 'Javascript', 'HTML'],
-    imgCard: '(../images/Img\ Plaholder\ project.png)',
+    imgCard: "url('../images/Img\ Plaholder\ project.png')",
     imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
   },
   {
     title: 'Multi-Post Stories Gain+Glory',
     desc: "Lorem Ipsum",
     langs: ['Ruby on rails', 'CSS', 'Javascript', 'HTML'],
-    imgCard: '(../images/Img\ Plaholder\ project.png)',
+    imgCard: "url('../images/Img\ Plaholder\ project.png')",
     imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
   },
   {
     title: 'Multi-Post Stories Gain+Glory',
     desc: "Lorem Ipsum",
     langs: ['Ruby on rails', 'CSS', 'Javascript', 'HTML'],
-    imgCard: '(../images/Img\ Plaholder\ project.png)',
+    imgCard: "url('../images/Img\ Plaholder\ project.png')",
     imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
   },
   {
     title: 'Multi-Post Stories Gain+Glory',
     desc: "Lorem Ipsum",
     langs: ['Ruby on rails', 'CSS', 'Javascript', 'HTML'],
-    imgCard: '(../images/Img\ Plaholder\ project.png)',
+    imgCard: "url('../images/Img\ Plaholder\ project.png')",
     imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
   },
   {
     title: 'Multi-Post Stories Gain+Glory',
     desc: "Lorem Ipsum",
     langs: ['Ruby on rails', 'CSS', 'Javascript', 'HTML'],
-    imgCard: '(../images/Img\ Plaholder\ project.png)',
+    imgCard: "url('../images/Img\ Plaholder\ project.png')",
     imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
   }
 ]
@@ -92,7 +92,7 @@ for (let i = 0; i < projectsInfo.length; i += 1) {
   // create wrapper
   let projWrapper = document.createElement('div');
   projWrapper.className = 'proj';
-  projWrapper.style.background = projectsInfo[i].imgCard;
+  projWrapper.style.backgroundImage = projectsInfo[i].imgCard;
   document.getElementById('projects').appendChild(projWrapper);
   let textDiv = document.createElement('div');
   textDiv.className = 'proj-text';
