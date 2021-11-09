@@ -367,7 +367,7 @@ button:active {
   flex-direction: column;
   width: 329px;
   height: 476px;
-  background-image: url(../images/Img\ Plaholder\ project.png);
+  /* background-image: url(../images/Img\ Plaholder\ project.png); */
   background-repeat: no-repeat;
   background-position: top;
   background-size: contain;

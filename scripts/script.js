@@ -39,4 +39,83 @@ for (let i = 0; i < items.length; i++) {
 
 // SCROLLSPY //
 
+// POPUP //
 
+const projectsInfo = [
+  {
+    title: 'Multi-Post Stories Gain+Glory',
+    desc: "Lorem Ipsum",
+    langs: ['Ruby on rails', 'CSS', 'Javascript', 'HTML'],
+    imgCard: '(../images/Img\ Plaholder\ project.png)',
+    imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
+  },
+  {
+    title: 'Multi-Post Stories Gain+Glory',
+    desc: "Lorem Ipsum",
+    langs: ['Ruby on rails', 'CSS', 'Javascript', 'HTML'],
+    imgCard: '(../images/Img\ Plaholder\ project.png)',
+    imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
+  },
+  {
+    title: 'Multi-Post Stories Gain+Glory',
+    desc: "Lorem Ipsum",
+    langs: ['Ruby on rails', 'CSS', 'Javascript', 'HTML'],
+    imgCard: '(../images/Img\ Plaholder\ project.png)',
+    imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
+  },
+  {
+    title: 'Multi-Post Stories Gain+Glory',
+    desc: "Lorem Ipsum",
+    langs: ['Ruby on rails', 'CSS', 'Javascript', 'HTML'],
+    imgCard: '(../images/Img\ Plaholder\ project.png)',
+    imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
+  },
+  {
+    title: 'Multi-Post Stories Gain+Glory',
+    desc: "Lorem Ipsum",
+    langs: ['Ruby on rails', 'CSS', 'Javascript', 'HTML'],
+    imgCard: '(../images/Img\ Plaholder\ project.png)',
+    imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
+  },
+  {
+    title: 'Multi-Post Stories Gain+Glory',
+    desc: "Lorem Ipsum",
+    langs: ['Ruby on rails', 'CSS', 'Javascript', 'HTML'],
+    imgCard: '(../images/Img\ Plaholder\ project.png)',
+    imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
+  }
+]
+
+const projects = document.getElementById('projects');
+
+for (let i = 0; i < projectsInfo.length; i += 1) {
+  // create wrapper
+  let projWrapper = document.createElement('div');
+  projWrapper.className = 'proj';
+  projWrapper.style.background = projectsInfo[i].imgCard;
+  document.getElementById('projects').appendChild(projWrapper);
+  let textDiv = document.createElement('div');
+  textDiv.className = 'proj-text';
+  projWrapper.appendChild(textDiv)
+
+  // Add title
+  let projTitle = document.createElement('h4');
+  projTitle.textContent = projectsInfo[i].title;
+  textDiv.appendChild(projTitle);
+
+  // Add langs
+  const projLangs = document.createElement('ul');
+  textDiv.appendChild(projLangs);
+
+  for (let n = 0; n < projectsInfo[i].langs.length; n++) {
+    let listElem = document.createElement('li');
+    let textElem = document.createTextNode(projectsInfo[i].langs[n]);
+    listElem.appendChild(textElem);
+    projLangs.appendChild(listElem);
+  }
+
+  // Add button
+  let seeBtn = document.createElement('button');
+  seeBtn.innerHTML = 'See Project';
+  textDiv.appendChild(seeBtn);
+}
