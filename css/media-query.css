@@ -29,7 +29,7 @@
     display: initial;
     padding: 10px 12px;
     font-size: 15px;
-    line-height: 20px;
+    line-height: 133%;
     text-align: center;
     color: #344563;
     width: auto;
@@ -48,7 +48,7 @@
     margin: 232px 260px 24px 260px;
     font-weight: 800;
     font-size: 48px;
-    line-height: 60px;
+    line-height: 125%;
     max-width: 920px;
   }
 
@@ -57,7 +57,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
-    line-height: 28px;
+    line-height: 160%;
     text-align: center;
     color: #172b4d;
   }
