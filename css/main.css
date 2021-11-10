@@ -504,7 +504,6 @@ button:active {
   color: #3a4a42;
   transition: scale ease-in-out 0.1s;
   margin-left: 8px;
-  transition: scale ease-in-out 0.1s;
 }
 
 .proj_desc {
@@ -645,7 +644,7 @@ button:active {
   scale: 1;
 }
 
-.card li {
+.card-li {
   padding: 12px;
   margin: 4px;
   background: #fff;

@@ -103,8 +103,8 @@
     max-height: 1083px;
     overflow-y: scroll;
     margin: auto;
-    top: calc(height/2);
-    left: calc(width/2);
+    top: calc(height / 2);
+    left: calc(width / 2);
   }
 
   .close_card {
@@ -117,7 +117,6 @@
     /* justify-self: flex-end; */
     align-self: flex-end;
     margin: 24px 24px 0 0;
-    border-radius: 8px;
     order: 0;
   }
 
@@ -127,16 +126,14 @@
   }
 
   .proj_title {
-    width: 500px;
-    height: 82;
+    width: 598px;
     margin: 24px 12px 0 26px;
     order: 2;
     align-self: flex-start;
   }
 
   .proj_see {
-    display: inline-flexbox;
-    margin: -43px 13px 0 0;
+    margin: 0 13px 0 0;
     order: 2;
     align-self: flex-end;
   }

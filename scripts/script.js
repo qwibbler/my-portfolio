@@ -42,48 +42,48 @@ for (let i = 0; i < items.length; i += 1) {
 // POPUP //
 const projectsInfo = [
   {
-    title: 'Multi-Post Stories Gain+Glory',
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    title: 'Multi-Post Stories Gain+Glory 1',
+    desc: "1 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     langs: ['Ruby on rails', 'CSS', 'Javascript', 'HTML'],
     imgCard: "url('../images/Img-Plaholder-project.png')",
     imgDesk: 'images/Snapshoot-Portfolio-med.jpg',
     imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
   },
   {
-    title: 'Multi-Post Stories Gain+Glory',
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    title: 'Multi-Post Stories Gain+Glory 2',
+    desc: "2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     langs: ['Ruby on rails', 'CSS', 'Javascript', 'HTML'],
     imgCard: "url('../images/Img-Plaholder-project.png')",
     imgDesk: 'images/Snapshoot-Portfolio-med.jpg',
     imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
   },
   {
-    title: 'Multi-Post Stories Gain+Glory',
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    title: 'Multi-Post Stories Gain+Glory 3',
+    desc: "2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     langs: ['Ruby on rails', 'CSS', 'Javascript', 'HTML'],
     imgCard: "url('../images/Img-Plaholder-project.png')",
     imgDesk: 'images/Snapshoot-Portfolio-med.jpg',
     imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
   },
   {
-    title: 'Multi-Post Stories Gain+Glory',
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    title: 'Multi-Post Stories Gain+Glory 4',
+    desc: "2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     langs: ['Ruby on rails', 'CSS', 'Javascript', 'HTML'],
     imgCard: "url('../images/Img-Plaholder-project.png')",
     imgDesk: 'images/Snapshoot-Portfolio-med.jpg',
     imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
   },
   {
-    title: 'Multi-Post Stories Gain+Glory',
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    title: 'Multi-Post Stories Gain+Glory 5',
+    desc: "2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     langs: ['Ruby on rails', 'CSS', 'Javascript', 'HTML'],
     imgCard: "url('../images/Img-Plaholder-project.png')",
     imgDesk: 'images/Snapshoot-Portfolio-med.jpg',
     imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
   },
   {
-    title: 'Multi-Post Stories Gain+Glory',
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    title: 'Multi-Post Stories Gain+Glory 6',
+    desc: "2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     langs: ['Ruby on rails', 'CSS', 'Javascript', 'HTML'],
     imgCard: "url('../images/Img-Plaholder-project.png')",
     imgDesk: 'images/Snapshoot-Portfolio-med.jpg',
@@ -185,6 +185,11 @@ function openPopup(id = 0) {
   // popupSeeButton
   const popupSeeButton = document.createElement('div');
   popupcard.appendChild(popupSeeButton);
+  if (windowSize.matches == false) {
+    const titleHeight = popHead.offsetHeight;
+    popupSeeButton.style.marginTop = '-' + titleHeight + 'px';
+    popupSeeButton.style.marginBottom = titleHeight - 49.5 + 'px';
+  }
   popupSeeButton.className = 'proj_see';
   const liveButton = document.createElement('button');
   popupSeeButton.appendChild(liveButton);
