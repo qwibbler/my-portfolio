@@ -124,24 +124,24 @@
     margin: 14px 24px 0 24px;
     order: 1;
   }
-  
+
   .proj_see {
     margin: 24px 13px 0 0;
     order: 2;
     align-self: flex-end;
   }
-  
+
   .proj_see button {
     margin: 0 12px 0 0;
   }
-  
-    .proj_title {
-      width: 598px;
-      margin: -49.5px 12px 20px 26px;
-      order: 3;
-      align-self: flex-start;
-    }
-  
+
+  .proj_title {
+    width: 598px;
+    margin: -49.5px 12px 20px 26px;
+    order: 3;
+    align-self: flex-start;
+  }
+
   .proj_langs {
     margin: 20px 0 36px 24px;
     order: 4;
