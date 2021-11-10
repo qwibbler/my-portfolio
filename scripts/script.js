@@ -185,11 +185,6 @@ function openPopup(id = 0) {
   // popupSeeButton
   const popupSeeButton = document.createElement('div');
   popupcard.appendChild(popupSeeButton);
-  if (windowSize.matches == false) {
-    const titleHeight = popHead.offsetHeight;
-    popupSeeButton.style.marginTop = '-' + titleHeight + 'px';
-    popupSeeButton.style.marginBottom = titleHeight - 49.5 + 'px';
-  }
   popupSeeButton.className = 'proj_see';
   const liveButton = document.createElement('button');
   popupSeeButton.appendChild(liveButton);
