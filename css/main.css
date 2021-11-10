@@ -473,7 +473,7 @@ button:active {
 .proj_img {
   margin: 16px 16px 0 16px;
   border-radius: 8px;
-    transition: scale ease-in-out 0.1s;
+  transition: scale ease-in-out 0.1s;
 }
 
 .proj_title {

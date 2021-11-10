@@ -85,7 +85,8 @@
   }
 
   /* POPUP */
-/* .project_cards {
+
+  /* .project_cards {
   overflow: scroll;
   position: absolute;
   display: flex;
@@ -108,10 +109,11 @@
 
   .close_card {
     position: initial;
-    background: #67798E;
+    background: #67798e;
     mix-blend-mode: multiply;
     border-radius: 8px;
     padding: 14px;
+
     /* justify-self: flex-end; */
     align-self: flex-end;
     margin: 24px 24px 0 0;
