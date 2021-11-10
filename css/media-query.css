@@ -84,6 +84,75 @@
     margin-top: 28px;
   }
 
+  /* POPUP */
+/* .project_cards {
+  overflow: scroll;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+} */
+
+  .proj_card {
+    /* display: flex;
+    position: relative; */
+    max-width: 920px;
+    max-height: 1083px;
+    overflow-y: scroll;
+    margin: auto;
+    top: calc(height/2);
+    left: calc(width/2);
+  }
+
+  .close_card {
+    position: initial;
+    background: #67798E;
+    mix-blend-mode: multiply;
+    border-radius: 8px;
+    padding: 14px;
+    /* justify-self: flex-end; */
+    align-self: flex-end;
+    margin: 24px 24px 0 0;
+    border-radius: 8px;
+    order: 0;
+  }
+
+  .proj_img {
+    margin: 14px 24px 0 24px;
+    order: 1;
+  }
+
+  .proj_title {
+    width: 500px;
+    height: 82;
+    margin: 24px 12px 0 26px;
+    order: 2;
+    align-self: flex-start;
+  }
+
+  .proj_see {
+    display: inline-flexbox;
+    margin: -43px 13px 0 0;
+    order: 2;
+    align-self: flex-end;
+  }
+
+  .proj_see button {
+    margin: 0 12px 0 0;
+  }
+
+  .proj_langs {
+    margin: 20px 0 36px 24px;
+    order: 4;
+  }
+
+  .proj_desc {
+    margin: 36px 24px 44px 24px;
+    order: 5;
+  }
+
   /*
     ***ABOUT PAGE***
   */
