@@ -1,4 +1,4 @@
-// NAVBAR //
+// NAVBAR
 
 const items = document.getElementsByClassName('menuItem');
 const windowSize = window.matchMedia('(max-width: 1080px)');
@@ -11,7 +11,7 @@ function openNav() {
     document.getElementById('close_nav_btn').style.display = 'flex';
     document.getElementById('open_nav_btn').style.display = 'none';
     document.getElementById('logo').style.display = 'none';
-    for (let i = 0; i < items.length; i++) {
+    for (let i = 0; i < items.length; i += 1) {
       items[i].style.display = 'flex';
     }
   }
@@ -25,7 +25,7 @@ function closeNav() {
     document.getElementById('close_nav_btn').style.display = 'none';
     document.getElementById('open_nav_btn').style.display = 'flex';
     document.getElementById('logo').style.display = 'initial';
-    for (let i = 0; i < items.length; i++) {
+    for (let i = 0; i < items.length; i += 1) {
       items[i].style.display = 'none';
     }
   }
@@ -33,7 +33,7 @@ function closeNav() {
 
 document.getElementById('open_nav_btn').addEventListener('click', openNav);
 document.getElementById('close_nav_btn').addEventListener('click', closeNav);
-for (let i = 0; i < items.length; i++) {
+for (let i = 0; i < items.length; i += 1) {
   items[i].addEventListener('click', closeNav);
 }
 
@@ -44,62 +44,60 @@ for (let i = 0; i < items.length; i++) {
 const projectsInfo = [
   {
     title: 'Multi-Post Stories Gain+Glory',
-    desc: "Lorem Ipsum",
+    desc: 'Lorem Ipsum',
     langs: ['Ruby on rails', 'CSS', 'Javascript', 'HTML'],
-    imgCard: "url('../images/Img\ Plaholder\ project.png')",
+    imgCard: "url('../images/Img-Plaholder-project.png')",
     imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
   },
   {
     title: 'Multi-Post Stories Gain+Glory',
-    desc: "Lorem Ipsum",
+    desc: 'Lorem Ipsum',
     langs: ['Ruby on rails', 'CSS', 'Javascript', 'HTML'],
-    imgCard: "url('../images/Img\ Plaholder\ project.png')",
+    imgCard: "url('../images/Img-Plaholder-project.png')",
     imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
   },
   {
     title: 'Multi-Post Stories Gain+Glory',
-    desc: "Lorem Ipsum",
+    desc: 'Lorem Ipsum',
     langs: ['Ruby on rails', 'CSS', 'Javascript', 'HTML'],
-    imgCard: "url('../images/Img\ Plaholder\ project.png')",
+    imgCard: "url('../images/Img-Plaholder-project.png')",
     imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
   },
   {
     title: 'Multi-Post Stories Gain+Glory',
-    desc: "Lorem Ipsum",
+    desc: 'Lorem Ipsum',
     langs: ['Ruby on rails', 'CSS', 'Javascript', 'HTML'],
-    imgCard: "url('../images/Img\ Plaholder\ project.png')",
+    imgCard: "url('../images/Img-Plaholder-project.png')",
     imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
   },
   {
     title: 'Multi-Post Stories Gain+Glory',
-    desc: "Lorem Ipsum",
+    desc: 'Lorem Ipsum',
     langs: ['Ruby on rails', 'CSS', 'Javascript', 'HTML'],
-    imgCard: "url('../images/Img\ Plaholder\ project.png')",
+    imgCard: "url('../images/Img-Plaholder-project.png')",
     imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
   },
   {
     title: 'Multi-Post Stories Gain+Glory',
-    desc: "Lorem Ipsum",
+    desc: 'Lorem Ipsum',
     langs: ['Ruby on rails', 'CSS', 'Javascript', 'HTML'],
-    imgCard: "url('../images/Img\ Plaholder\ project.png')",
+    imgCard: "url('../images/Img-Plaholder-project.png')",
     imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
-  }
-]
-
-const projects = document.getElementById('projects');
+  },
+];
 
 for (let i = 0; i < projectsInfo.length; i += 1) {
   // create wrapper
-  let projWrapper = document.createElement('div');
+  const projWrapper = document.createElement('div');
   projWrapper.className = 'proj';
   projWrapper.style.backgroundImage = projectsInfo[i].imgCard;
   document.getElementById('projects').appendChild(projWrapper);
-  let textDiv = document.createElement('div');
+  const textDiv = document.createElement('div');
   textDiv.className = 'proj-text';
-  projWrapper.appendChild(textDiv)
+  projWrapper.appendChild(textDiv);
 
   // Add title
-  let projTitle = document.createElement('h4');
+  const projTitle = document.createElement('h4');
   projTitle.textContent = projectsInfo[i].title;
   textDiv.appendChild(projTitle);
 
@@ -107,15 +105,15 @@ for (let i = 0; i < projectsInfo.length; i += 1) {
   const projLangs = document.createElement('ul');
   textDiv.appendChild(projLangs);
 
-  for (let n = 0; n < projectsInfo[i].langs.length; n++) {
-    let listElem = document.createElement('li');
-    let textElem = document.createTextNode(projectsInfo[i].langs[n]);
+  for (let n = 0; n < projectsInfo[i].langs.length; n += 1) {
+    const listElem = document.createElement('li');
+    const textElem = document.createTextNode(projectsInfo[i].langs[n]);
     listElem.appendChild(textElem);
     projLangs.appendChild(listElem);
   }
 
   // Add button
-  let seeBtn = document.createElement('button');
+  const seeBtn = document.createElement('button');
   seeBtn.innerHTML = 'See Project';
   textDiv.appendChild(seeBtn);
 }
