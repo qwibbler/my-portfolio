@@ -188,10 +188,10 @@ function openPopup(id = 0) {
   popupSeeButton.className = 'proj_see';
   const liveButton = document.createElement('button');
   popupSeeButton.appendChild(liveButton);
-  liveButton.textContent = 'See live';
+  liveButton.innerHTML = 'See live <img src="images/Live.svg" alt="">';
   const srcButton = document.createElement('button');
   popupSeeButton.appendChild(srcButton);
-  srcButton.textContent = 'See source';
+  srcButton.innerHTML = 'See Source <img src="images/live-github.svg"alt="">';
 }
 
 for (let k = 0; k < projectsInfo.length; k += 1) {
