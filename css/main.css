@@ -440,7 +440,7 @@ button:active {
   bottom: 16px;
   left: 16px;
   border-radius: 16px;
-  background-color: red;
+  background-color: white;
 }
 
 .close_card {
@@ -453,7 +453,7 @@ button:active {
   right: 38px;
   width: 12px;
   height: 12px;
-  color: white;
+  color: black;
   background-color: transparent;
 }
 
@@ -516,9 +516,9 @@ button:active {
   margin: 0 14px;
 }
 
-.popup {
+/* .popup {
   display: none;
-}
+} */
 
 /*
     ***ABOUT PAGE***

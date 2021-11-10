@@ -47,42 +47,42 @@ const projectsInfo = [
     desc: 'Lorem Ipsum',
     langs: ['Ruby on rails', 'CSS', 'Javascript', 'HTML'],
     imgCard: "url('../images/Img-Plaholder-project.png')",
-    imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
+    imgPopup: "<img src='images/Snapshoot-Portfolio-components.jpg'/>"
   },
   {
     title: 'Multi-Post Stories Gain+Glory',
     desc: 'Lorem Ipsum',
     langs: ['Ruby on rails', 'CSS', 'Javascript', 'HTML'],
     imgCard: "url('../images/Img-Plaholder-project.png')",
-    imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
+    imgPopup: "<img src='images/Snapshoot-Portfolio-components.jpg'/>",
   },
   {
     title: 'Multi-Post Stories Gain+Glory',
     desc: 'Lorem Ipsum',
     langs: ['Ruby on rails', 'CSS', 'Javascript', 'HTML'],
     imgCard: "url('../images/Img-Plaholder-project.png')",
-    imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
+    imgPopup: "<img src='images/Snapshoot-Portfolio-components.jpg'/>",
   },
   {
     title: 'Multi-Post Stories Gain+Glory',
     desc: 'Lorem Ipsum',
     langs: ['Ruby on rails', 'CSS', 'Javascript', 'HTML'],
     imgCard: "url('../images/Img-Plaholder-project.png')",
-    imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
+    imgPopup: "<img src='images/Snapshoot-Portfolio-components.jpg'/>",
   },
   {
     title: 'Multi-Post Stories Gain+Glory',
     desc: 'Lorem Ipsum',
     langs: ['Ruby on rails', 'CSS', 'Javascript', 'HTML'],
     imgCard: "url('../images/Img-Plaholder-project.png')",
-    imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
+    imgPopup: "<img src='images/Snapshoot-Portfolio-components.jpg'/>",
   },
   {
     title: 'Multi-Post Stories Gain+Glory',
     desc: 'Lorem Ipsum',
     langs: ['Ruby on rails', 'CSS', 'Javascript', 'HTML'],
     imgCard: "url('../images/Img-Plaholder-project.png')",
-    imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
+    imgPopup: "<img src='images/Snapshoot-Portfolio-components.jpg'/>",
   },
 ];
 
@@ -116,4 +116,78 @@ for (let i = 0; i < projectsInfo.length; i += 1) {
   const seeBtn = document.createElement('button');
   seeBtn.innerHTML = 'See Project';
   textDiv.appendChild(seeBtn);
+  seeBtn.setAttribute('id', i.toString());
+}
+
+//popup window
+const popupWrapper = document.getElementById('popupWrapper');
+
+let id = 0;
+const openPopup = function(id = 0) {
+  //popbackground
+  let popupBackground = document.createElement('div');
+  popupWrapper.appendChild(popupBackground);
+  popupBackground.className = 'proj_background';
+
+
+  //popupcard
+  let popupcard = document.createElement('div');
+  popupWrapper.appendChild(popupcard);
+  popupcard.className = 'proj_card';
+
+  //popCloseButton
+  let popCloseButton = document.createElement('button');
+  popupcard.appendChild(popCloseButton);
+  popCloseButton.className = 'close_card';
+  popCloseButton.textContent = 'X';
+  popCloseButton.addEventListener('click', closepopup)
+
+  //popupimage
+  let imgDiv = document.createElement('div');
+  popupcard.appendChild(imgDiv);
+  imgDiv.innerHTML = "<img src='images/Snapshoot-Portfolio-components.jpg' class='proj_img' alt='Project Image' />"
+
+  //popupheading
+  let popHead = document.createElement('h3');
+  popupcard.appendChild(popHead);
+  popHead.className = 'proj_title';
+  popHead.textContent = projectsInfo[id].title;
+
+  //poplaguages
+  let poplaguagesul = document.createElement('ul');
+  popupcard.appendChild(poplaguagesul);
+  poplaguagesul.className = 'proj_langs';
+  for(let i = 0; i<projectsInfo[id].langs.length; i++) {
+    let poplanguagesli = document.createElement('li');
+    poplaguagesul.appendChild(poplanguagesli);
+    poplanguagesli.textContent = projectsInfo[id].langs[i];
+  }
+
+  //popdescription
+  let descript = document.createElement('p');
+  popupcard.appendChild(descript)
+  descript.className = 'proj_desc';
+  descript.textContent = projectsInfo[id].desc;
+
+  //popupSeeButton
+  let popupSeeButton = document.createElement('div');
+  popupcard.appendChild(popupSeeButton);
+  popupSeeButton.className = 'proj_see';
+  let liveButton = document.createElement('button');
+  popupSeeButton.appendChild(liveButton);
+  liveButton.textContent = 'See live';
+  let srcButton = document.createElement('button');
+  popupSeeButton.appendChild(srcButton);
+  srcButton.textContent = 'See source';
+}
+
+const closepopup = function() {
+  popupWrapper.innerHTML = '';
+}
+
+for (let k = 0; k < projectsInfo.length; k += 1) {
+  let openPopupId = document.getElementById(k.toString());
+  openPopupId.addEventListener('click', function () {
+    openPopup(k);
+  });
 }
