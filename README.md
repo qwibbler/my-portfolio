@@ -12,6 +12,7 @@
 ## Built With
 
 - HTML and CSS
+- Javascript
 
 ## Live Demo
 

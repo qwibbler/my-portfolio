@@ -29,7 +29,7 @@
     display: initial;
     padding: 10px 12px;
     font-size: 15px;
-    line-height: 20px;
+    line-height: 133%;
     text-align: center;
     color: #344563;
     width: auto;
@@ -48,7 +48,7 @@
     margin: 232px 260px 24px 260px;
     font-weight: 800;
     font-size: 48px;
-    line-height: 60px;
+    line-height: 125%;
     max-width: 920px;
   }
 
@@ -57,7 +57,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
-    line-height: 28px;
+    line-height: 160%;
     text-align: center;
     color: #172b4d;
   }
@@ -82,6 +82,74 @@
 
   .projects {
     margin-top: 28px;
+  }
+
+  /* POPUP */
+
+  /* .project_cards {
+  overflow: scroll;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+} */
+
+  .proj_card {
+    /* display: flex;
+    position: relative; */
+    max-width: 920px;
+    max-height: 1083px;
+    overflow-y: scroll;
+    margin: auto;
+    top: calc(height / 2);
+    left: calc(width / 2);
+  }
+
+  .close_card {
+    position: initial;
+    background: #67798e;
+    mix-blend-mode: multiply;
+    border-radius: 8px;
+    padding: 14px;
+
+    /* justify-self: flex-end; */
+    align-self: flex-end;
+    margin: 24px 24px 0 0;
+    order: 0;
+  }
+
+  .proj_img {
+    margin: 14px 24px 0 24px;
+    order: 1;
+  }
+
+  .proj_see {
+    margin: 24px 13px 0 0;
+    order: 2;
+    align-self: flex-end;
+  }
+
+  .proj_see button {
+    margin: 0 12px 0 0;
+  }
+
+  .proj_title {
+    width: 598px;
+    margin: -49.5px 12px 20px 26px;
+    order: 3;
+    align-self: flex-start;
+  }
+
+  .proj_langs {
+    margin: 20px 0 0 24px;
+    order: 4;
+  }
+
+  .proj_desc {
+    margin: 36px 24px 44px 24px;
+    order: 5;
   }
 
   /*
