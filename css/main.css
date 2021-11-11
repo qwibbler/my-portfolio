@@ -726,14 +726,18 @@ button:active {
   scale: 1.02;
 }
 
-/* small {
-  color: rgb(211, 0, 0);
+#contact-form button {
+  margin-bottom: 0;
+}
+
+small {
+  color: rgb(255, 1, 1);
   background-color: beige;
-  margin-top: 2px;
-  border: 1px solid darkgray;
+  border: 1px solid red;
   border-radius: 2px;
-  padding: 2px;
-} */
+  padding: 5px;
+  margin: 2px 0 24px 0;
+}
 
 /*
   Footer
