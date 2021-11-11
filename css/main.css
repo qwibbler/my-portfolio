@@ -731,9 +731,9 @@ button:active {
 }
 
 small {
-  color: rgb(255, 1, 1);
-  background-color: beige;
-  border: 1px solid red;
+  color: #172b4d;
+  background-color: #c5e9da;
+  border: 1px solid #172b4d;
   border-radius: 2px;
   padding: 5px;
   margin: 2px 0 24px 0;

@@ -204,7 +204,7 @@ for (let k = 0; k < projectsInfo.length; k += 1) {
 // Validate form
 const form = document.getElementById('contact-form');
 const email = document.getElementById('useremail');
-const errorUpper = 'Your email is in uppercase. Please rewrite it in lowercase.';
+const errorUpper = '&#9888; Your email is in uppercase. Please rewrite it in lowercase.';
 const small = document.createElement('small');
 
 function checkCase(input) {
@@ -219,7 +219,7 @@ form.addEventListener('submit', (e) => {
   const inputEmail = email.value.trim();
   if (checkCase(inputEmail)) {
     form.appendChild(small);
-    small.textContent = errorUpper;
+    small.innerHTML = errorUpper;
   } else {
     form.removeChild(small);
     isValid = true;
