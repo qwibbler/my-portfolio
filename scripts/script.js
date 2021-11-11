@@ -233,4 +233,27 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-// 
+// Local Storage
+
+function saveForm(){
+  let formValues = JSON.stringify({
+    userName: form.elements['username'].value.trim(),
+    userEmail: form.elements['useremail'].value.trim(),
+    userComment: form.elements['comment'].value.trim(),
+  });
+
+  localStorage.setItem('formValues', formValues);
+}
+
+form.addEventListener('change', () => {
+  saveForm();
+});
+
+function getForm(){
+  const savedForm = JSON.parse(localStorage.getItem('formValues'));
+  form.elements['username'].value = savedForm.userName;
+  form.elements['useremail'].value = savedForm.userEmail;
+  form.elements['comment'].value = savedForm.userComment;
+};
+
+window.onload = getForm;

@@ -431,6 +431,7 @@ button:active {
 }
 
 .proj_card {
+  overflow-y: scroll;
   display: flex;
   flex-direction: column;
   position: fixed;
