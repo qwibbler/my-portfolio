@@ -233,16 +233,15 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-
 // Local Storage
 
-let formName = form.elements['username'].value.trim();
+let formName = form.elements.username.value.trim();
 let formEmail = form.elements.useremail.value.trim();
 let formMsg = form.elements.comment.value.trim();
 
 // Get formData and post it to local storage
 function upDateValue() {
-  let formValues = JSON.stringify({
+  const formValues = JSON.stringify({
     // for some reason, changing things even tricially breaks it. :(
     name: form.elements['username'].value.trim(),
     email: form.elements['useremail'].value.trim(),
@@ -255,12 +254,10 @@ form.addEventListener('change', upDateValue);
 
 // Get stored values and fill them in
 function loadData() {
-  if (localStorage.getItem('formData') !== null) {
-    const savedData = JSON.parse(localStorage.getItem('formData'));
-    formName = savedData.name;
-    formEmail = savedData.email;
-    formMsg = savedData.comment;
-  }
+  const savedData = JSON.parse(localStorage.getItem('formData'));
+  formName = savedData.name;
+  formEmail = savedData.email;
+  formMsg = savedData.comment;
 }
 // Run the loader on window start
 window.onload = loadData;
