@@ -216,15 +216,21 @@ form.addEventListener('submit', (e) => {
 
   // Form invalid by default
   let isValid = false;
+
+  // Check email case
   const inputEmail = email.value.trim();
   if (checkCase(inputEmail)) {
     form.appendChild(small);
     small.innerHTML = errorUpper;
   } else {
-    form.removeChild(small);
     isValid = true;
   }
+  
+  // If form valid, submit
   if (isValid) {
+    form.removeChild(small);
     form.submit();
   }
 });
+
+// 
