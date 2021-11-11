@@ -211,3 +211,15 @@ function checkCase(input) {
   return /[A-Z]/.test(input);
 }
 
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const inputEmail = email.value.trim();
+  if(checkCase(inputEmail)) {
+    form.appendChild(small);
+    small.textContent =  errorUpper;
+  } else {
+    form.submit();
+  }
+});
+
+
