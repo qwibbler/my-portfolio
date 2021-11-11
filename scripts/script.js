@@ -200,3 +200,31 @@ for (let k = 0; k < projectsInfo.length; k += 1) {
     openPopup(k);
   });
 }
+
+// Validate form
+const form = document.getElementById('contact-form');
+const email = document.getElementById('useremail');
+const errorUpper = '&#9888; Your email is in uppercase. Please rewrite it in lowercase.';
+const small = document.createElement('small');
+
+function checkCase(input) {
+  return /[A-Z]/.test(input); // If has upper, return True
+}
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  // Form invalid by default
+  let isValid = false;
+  const inputEmail = email.value.trim();
+  if (checkCase(inputEmail)) {
+    form.appendChild(small);
+    small.innerHTML = errorUpper;
+  } else {
+    form.removeChild(small);
+    isValid = true;
+  }
+  if (isValid) {
+    form.submit();
+  }
+});

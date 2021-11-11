@@ -215,6 +215,10 @@
     margin: 0;
   }
 
+  small {
+    margin-bottom: 0;
+  }
+
   /*
     ***FOOTER***
   */
