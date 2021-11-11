@@ -235,14 +235,29 @@ form.addEventListener('submit', (e) => {
 
 // Local Storage
 
-let formName = form.element['username'].value.trim();
-let formEmail = form.element['useremail'].value.trim();
-let formMsg = form.element['comment'].value.trim();
+let formName = form.elements['username'];
+let formEmail = form.elements['useremail'];
+let formMsg = form.elements['comment'];
 
-let formData = {
-  name: formName,
-  email: formEmail,
-  comment: formMsg
+function upDateValue () {
+  let formData = {
+    name: formName.value.trim(),
+    email: formEmail.value.trim(),
+    comment: formMsg.value.trim()
+  }
+
+  let jsonData = JSON.stringify(formData);
+  localStorage.setItem('formData', jsonData);
 }
 
-let jsonData = JSON.stringify(formData);
+form.addEventListener('change', upDateValue);
+function loadData () {
+  const savedData = JSON.parse(localStorage.getItem('formData'));
+  
+  if (localStorage.getItem('formData') !== null) {
+    formName.value = savedData.name;
+    formName.value = savedData.name;
+    formMsg.value = savedData.comment;
+  }
+}
+window.onload = loadData;
