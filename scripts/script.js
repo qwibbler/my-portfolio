@@ -208,18 +208,23 @@ const errorUpper = 'Your email is in uppercase. Please rewrite it in lowercase.'
 const small = document.createElement('small');
 
 function checkCase(input) {
-  return /[A-Z]/.test(input);
+  return /[A-Z]/.test(input); // If has upper, return True
 }
 
-form.addEventListener('submit', function(e) {
+form.addEventListener('submit', function (e) {
   e.preventDefault();
+
+  // Form invalid by default
+  const isValid = false
   const inputEmail = email.value.trim();
-  if(checkCase(inputEmail)) {
-    form.appendChild(small);
-    small.textContent =  errorUpper;
+  if (checkCase(inputEmail)) {
+    form.appendChild(small)
+    small.textContent = errorUpper;
   } else {
+    form.removeChild(small);
+    isValid = true;
+  }
+  if (isValid) {
     form.submit();
   }
 });
-
-
