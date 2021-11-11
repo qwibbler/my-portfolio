@@ -726,6 +726,15 @@ button:active {
   scale: 1.02;
 }
 
+/* small {
+  color: rgb(211, 0, 0);
+  background-color: beige;
+  margin-top: 2px;
+  border: 1px solid darkgray;
+  border-radius: 2px;
+  padding: 2px;
+} */
+
 /*
   Footer
 */

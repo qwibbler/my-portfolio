@@ -34,6 +34,10 @@
 
 - GitHub: [@fabianofrank](https://github.com/fabianofrank)
 
+👤 **Azeez Rotimi Arigbabuwo**
+
+- GitHub: [@ayebaishmo](https://github.com/ayebaishmo)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!

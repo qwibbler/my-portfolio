@@ -200,3 +200,14 @@ for (let k = 0; k < projectsInfo.length; k += 1) {
     openPopup(k);
   });
 }
+
+// Validate form
+const form = document.getElementById('contact-form');
+const email = document.getElementById('useremail');
+const errorUpper = 'Your email is in uppercase. Please rewrite it in lowercase.'
+const small = document.createElement('small');
+
+function checkCase(input) {
+  return /[A-Z]/.test(input);
+}
+
