@@ -204,21 +204,21 @@ for (let k = 0; k < projectsInfo.length; k += 1) {
 // Validate form
 const form = document.getElementById('contact-form');
 const email = document.getElementById('useremail');
-const errorUpper = 'Your email is in uppercase. Please rewrite it in lowercase.'
+const errorUpper = 'Your email is in uppercase. Please rewrite it in lowercase.';
 const small = document.createElement('small');
 
 function checkCase(input) {
   return /[A-Z]/.test(input); // If has upper, return True
 }
 
-form.addEventListener('submit', function (e) {
+form.addEventListener('submit', (e) => {
   e.preventDefault();
 
   // Form invalid by default
-  const isValid = false
+  let isValid = false;
   const inputEmail = email.value.trim();
   if (checkCase(inputEmail)) {
-    form.appendChild(small)
+    form.appendChild(small);
     small.textContent = errorUpper;
   } else {
     form.removeChild(small);
