@@ -240,7 +240,7 @@ const uMsg = document.getElementById('comment');
 
 // Get formData and post it to local storage
 function upDateValue() {
-  let formData = JSON.stringify({
+  const formData = JSON.stringify({
     // for some reason, changing things even tricially breaks it. :(
     name: uName.value.trim(),
     email: uMail.value.trim(),
@@ -260,25 +260,3 @@ function loadData() {
 }
 // Run the loader on window start
 window.onload = loadData;
-
-// function saveForm(){
-//   let formValues = JSON.stringify({
-//     userName: form.elements['username'].value.trim(),
-//     userEmail: form.elements['useremail'].value.trim(),
-//     userComment: form.elements['comment'].value.trim(),
-//   });
-//   localStorage.setItem('formValues', formValues);
-// }
-// form.addEventListener('change', () => {
-//   saveForm();
-// });
-
-// ===
-// function getForm(){
-//   const savedForm = JSON.parse(localStorage.getItem('formValues'));
-//   form.elements['username'].value = savedForm.userName;
-//   form.elements['useremail'].value = savedForm.userEmail;
-//   form.elements['comment'].value = savedForm.userComment;
-// };
-
-// window.onload = getForm;
