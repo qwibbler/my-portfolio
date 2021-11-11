@@ -234,20 +234,19 @@ form.addEventListener('submit', (e) => {
 });
 
 // Local Storage
-
-let formName = form.elements.username.value.trim();
-let formEmail = form.elements.useremail.value.trim();
-let formMsg = form.elements.comment.value.trim();
+const uName = document.getElementById('username');
+const uMail = document.getElementById('useremail');
+const uMsg = document.getElementById('comment');
 
 // Get formData and post it to local storage
 function upDateValue() {
-  const formValues = JSON.stringify({
+  let formData = JSON.stringify({
     // for some reason, changing things even tricially breaks it. :(
-    name: form.elements['username'].value.trim(),
-    email: form.elements['useremail'].value.trim(),
-    comment: form.elements['comment'].value.trim(),
+    name: uName.value.trim(),
+    email: uMail.value.trim(),
+    comment: uMsg.value.trim(),
   });
-  localStorage.setItem('formData', formValues);
+  localStorage.setItem('formData', formData);
 }
 // On change, update values
 form.addEventListener('change', upDateValue);
@@ -255,9 +254,31 @@ form.addEventListener('change', upDateValue);
 // Get stored values and fill them in
 function loadData() {
   const savedData = JSON.parse(localStorage.getItem('formData'));
-  formName = savedData.name;
-  formEmail = savedData.email;
-  formMsg = savedData.comment;
+  uName.value = savedData.name;
+  uMail.value = savedData.email;
+  uMsg.value = savedData.comment;
 }
 // Run the loader on window start
 window.onload = loadData;
+
+// function saveForm(){
+//   let formValues = JSON.stringify({
+//     userName: form.elements['username'].value.trim(),
+//     userEmail: form.elements['useremail'].value.trim(),
+//     userComment: form.elements['comment'].value.trim(),
+//   });
+//   localStorage.setItem('formValues', formValues);
+// }
+// form.addEventListener('change', () => {
+//   saveForm();
+// });
+
+// ===
+// function getForm(){
+//   const savedForm = JSON.parse(localStorage.getItem('formValues'));
+//   form.elements['username'].value = savedForm.userName;
+//   form.elements['useremail'].value = savedForm.userEmail;
+//   form.elements['comment'].value = savedForm.userComment;
+// };
+
+// window.onload = getForm;
