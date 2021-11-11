@@ -225,7 +225,7 @@ form.addEventListener('submit', (e) => {
   } else {
     isValid = true;
   }
-  
+
   // If form valid, submit
   if (isValid) {
     form.removeChild(small);
@@ -233,31 +233,34 @@ form.addEventListener('submit', (e) => {
   }
 });
 
+
 // Local Storage
 
-let formName = form.elements['username'];
-let formEmail = form.elements['useremail'];
-let formMsg = form.elements['comment'];
+let formName = form.elements['username'].value.trim();
+let formEmail = form.elements.useremail.value.trim();
+let formMsg = form.elements.comment.value.trim();
 
-function upDateValue () {
-  let formData = {
-    name: formName.value.trim(),
-    email: formEmail.value.trim(),
-    comment: formMsg.value.trim()
-  }
-
-  let jsonData = JSON.stringify(formData);
-  localStorage.setItem('formData', jsonData);
+// Get formData and post it to local storage
+function upDateValue() {
+  let formValues = JSON.stringify({
+    // for some reason, changing things even tricially breaks it. :(
+    name: form.elements['username'].value.trim(),
+    email: form.elements['useremail'].value.trim(),
+    comment: form.elements['comment'].value.trim(),
+  });
+  localStorage.setItem('formData', formValues);
 }
-
+// On change, update values
 form.addEventListener('change', upDateValue);
-function loadData () {
-  const savedData = JSON.parse(localStorage.getItem('formData'));
-  
+
+// Get stored values and fill them in
+function loadData() {
   if (localStorage.getItem('formData') !== null) {
-    formName.value = savedData.name;
-    formName.value = savedData.name;
-    formMsg.value = savedData.comment;
+    const savedData = JSON.parse(localStorage.getItem('formData'));
+    formName = savedData.name;
+    formEmail = savedData.email;
+    formMsg = savedData.comment;
   }
 }
+// Run the loader on window start
 window.onload = loadData;
