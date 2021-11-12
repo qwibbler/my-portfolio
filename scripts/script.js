@@ -14,7 +14,7 @@ function openNav() {
     for (let i = 0; i < items.length; i += 1) {
       items[i].style.display = 'flex';
     }
-    document.body.style.overflowY = "hidden";
+    document.body.style.overflowY = 'hidden';
   }
 }
 
@@ -29,7 +29,7 @@ function closeNav() {
     for (let i = 0; i < items.length; i += 1) {
       items[i].style.display = 'none';
     }
-    document.body.style.overflowY = "auto";
+    document.body.style.overflowY = 'auto';
   }
 }
 
@@ -137,8 +137,8 @@ for (let i = 0; i < projectsInfo.length; i += 1) {
   const seeBtn = document.createElement('button');
   seeBtn.innerHTML = 'See Project';
   textDiv.appendChild(seeBtn);
-  seeBtn.className = 'seeBtn'
-  seeBtn.id = i.toString()
+  seeBtn.className = 'seeBtn';
+  seeBtn.id = i.toString();
 }
 
 // popup window
@@ -146,7 +146,7 @@ const popupWrapper = document.getElementById('popupWrapper');
 
 function closepopup() {
   popupWrapper.innerHTML = '';
-  document.body.style.overflowY = "auto";
+  document.body.style.overflowY = 'auto';
 }
 
 function openPopup(id = 0) {
@@ -216,7 +216,7 @@ function openPopup(id = 0) {
   srcButton.innerHTML = 'See Source <img src="images/live-github.svg"alt="">';
 
   // disable page scroll
-  document.body.style.overflowY = "hidden";
+  document.body.style.overflowY = 'hidden';
 }
 
 for (let k = 0; k < projectsInfo.length; k += 1) {
