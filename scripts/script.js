@@ -97,6 +97,8 @@ for (let i = 0; i < projectsInfo.length; i += 1) {
   projWrapper.className = 'proj';
   projWrapper.style.backgroundImage = projectsInfo[i].imgCard;
   document.getElementById('projects').appendChild(projWrapper);
+
+  // create text part
   const textDiv = document.createElement('div');
   textDiv.className = 'proj-text';
   projWrapper.appendChild(textDiv);
@@ -198,11 +200,17 @@ function openPopup(id = 0) {
 }
 
 for (let k = 0; k < projectsInfo.length; k += 1) {
+  // Get project button by id then add listener according to id
   const openPopupId = document.getElementById(k.toString());
   openPopupId.addEventListener('click', () => {
     openPopup(k);
   });
 
+  // maybe make the whole project clickable?
+  const openWrapper = document.getElementsByClassName('proj')[k];
+  openWrapper.addEventListener('click', () => {
+    openPopup(k);
+  });
 }
 
 // Validate form
