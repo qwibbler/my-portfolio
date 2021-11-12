@@ -216,15 +216,47 @@ form.addEventListener('submit', (e) => {
 
   // Form invalid by default
   let isValid = false;
+
+  // Check email case
   const inputEmail = email.value.trim();
   if (checkCase(inputEmail)) {
     form.appendChild(small);
     small.innerHTML = errorUpper;
   } else {
-    form.removeChild(small);
     isValid = true;
   }
+
+  // If form valid, submit
   if (isValid) {
+    form.removeChild(small);
     form.submit();
   }
 });
+
+// Local Storage
+const uName = document.getElementById('username');
+const uMail = document.getElementById('useremail');
+const uMsg = document.getElementById('comment');
+
+// Get formData and post it to local storage
+function upDateValue() {
+  const formData = JSON.stringify({
+    // for some reason, changing things even tricially breaks it. :(
+    name: uName.value.trim(),
+    email: uMail.value.trim(),
+    comment: uMsg.value.trim(),
+  });
+  localStorage.setItem('formData', formData);
+}
+// On change, update values
+form.addEventListener('change', upDateValue);
+
+// Get stored values and fill them in
+function loadData() {
+  const savedData = JSON.parse(localStorage.getItem('formData'));
+  uName.value = savedData.name;
+  uMail.value = savedData.email;
+  uMsg.value = savedData.comment;
+}
+// Run the loader on window start
+window.onload = loadData;
