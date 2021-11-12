@@ -192,6 +192,9 @@ function openPopup(id = 0) {
   const srcButton = document.createElement('button');
   popupSeeButton.appendChild(srcButton);
   srcButton.innerHTML = 'See Source <img src="images/live-github.svg"alt="">';
+
+  // disable page scroll
+  document.querySelector('body').style.overflowY = "hidden";
 }
 
 for (let k = 0; k < projectsInfo.length; k += 1) {
@@ -253,10 +256,12 @@ form.addEventListener('change', upDateValue);
 
 // Get stored values and fill them in
 function loadData() {
-  const savedData = JSON.parse(localStorage.getItem('formData'));
-  uName.value = savedData.name;
-  uMail.value = savedData.email;
-  uMsg.value = savedData.comment;
+  if (localStorage.getItem('formData') !== null) {
+    const savedData = JSON.parse(localStorage.getItem('formData'));
+    uName.value = savedData.name;
+    uMail.value = savedData.email;
+    uMsg.value = savedData.comment;
+  }
 }
 // Run the loader on window start
 window.onload = loadData;
