@@ -194,7 +194,7 @@ function openPopup(id = 0) {
   srcButton.innerHTML = 'See Source <img src="images/live-github.svg"alt="">';
 
   // disable page scroll
-  document.querySelector('body').style.overflowY = "hidden";
+  document.body.style.overflowY = "hidden";
 }
 
 for (let k = 0; k < projectsInfo.length; k += 1) {
@@ -202,6 +202,7 @@ for (let k = 0; k < projectsInfo.length; k += 1) {
   openPopupId.addEventListener('click', () => {
     openPopup(k);
   });
+
 }
 
 // Validate form
