@@ -50,6 +50,8 @@ const projectsInfo = [
     imgCard: "url('../images/Img-Plaholder-project.png')",
     imgDesk: 'images/Snapshoot-Portfolio-med.jpg',
     imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
+    live: '#',
+    source: '#',
   },
   {
     title: 'Multi-Post Stories Gain+Glory 2',
@@ -58,6 +60,8 @@ const projectsInfo = [
     imgCard: "url('../images/Img-Plaholder-project.png')",
     imgDesk: 'images/Snapshoot-Portfolio-med.jpg',
     imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
+    live: '#',
+    source: '#',
   },
   {
     title: 'Multi-Post Stories Gain+Glory 3',
@@ -66,6 +70,8 @@ const projectsInfo = [
     imgCard: "url('../images/Img-Plaholder-project.png')",
     imgDesk: 'images/Snapshoot-Portfolio-med.jpg',
     imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
+    live: '#',
+    source: '#',
   },
   {
     title: 'Multi-Post Stories Gain+Glory 4',
@@ -74,6 +80,8 @@ const projectsInfo = [
     imgCard: "url('../images/Img-Plaholder-project.png')",
     imgDesk: 'images/Snapshoot-Portfolio-med.jpg',
     imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
+    live: '#',
+    source: '#',
   },
   {
     title: 'Multi-Post Stories Gain+Glory 5',
@@ -82,6 +90,8 @@ const projectsInfo = [
     imgCard: "url('../images/Img-Plaholder-project.png')",
     imgDesk: 'images/Snapshoot-Portfolio-med.jpg',
     imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
+    live: '#',
+    source: '#',
   },
   {
     title: 'Multi-Post Stories Gain+Glory 6',
@@ -90,6 +100,8 @@ const projectsInfo = [
     imgCard: "url('../images/Img-Plaholder-project.png')",
     imgDesk: 'images/Snapshoot-Portfolio-med.jpg',
     imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
+    live: '#',
+    source: '#',
   },
 ];
 
@@ -192,9 +204,13 @@ function openPopup(id = 0) {
   const popupSeeButton = document.createElement('div');
   popupcard.appendChild(popupSeeButton);
   popupSeeButton.className = 'proj_see';
+
+  // live
   const liveButton = document.createElement('button');
   popupSeeButton.appendChild(liveButton);
   liveButton.innerHTML = 'See live <img src="images/Live.svg" alt="">';
+
+  // src
   const srcButton = document.createElement('button');
   popupSeeButton.appendChild(srcButton);
   srcButton.innerHTML = 'See Source <img src="images/live-github.svg"alt="">';
