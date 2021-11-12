@@ -14,6 +14,7 @@ function openNav() {
     for (let i = 0; i < items.length; i += 1) {
       items[i].style.display = 'flex';
     }
+    document.body.style.overflowY = "hidden";
   }
 }
 
@@ -28,6 +29,7 @@ function closeNav() {
     for (let i = 0; i < items.length; i += 1) {
       items[i].style.display = 'none';
     }
+    document.body.style.overflowY = "auto";
   }
 }
 
