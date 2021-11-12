@@ -123,7 +123,8 @@ for (let i = 0; i < projectsInfo.length; i += 1) {
   const seeBtn = document.createElement('button');
   seeBtn.innerHTML = 'See Project';
   textDiv.appendChild(seeBtn);
-  seeBtn.setAttribute('id', i.toString());
+  seeBtn.className = 'seeBtn'
+  seeBtn.id = i.toString()
 }
 
 // popup window
@@ -131,6 +132,7 @@ const popupWrapper = document.getElementById('popupWrapper');
 
 function closepopup() {
   popupWrapper.innerHTML = '';
+  document.body.style.overflowY = "auto";
 }
 
 function openPopup(id = 0) {
@@ -201,7 +203,7 @@ function openPopup(id = 0) {
 
 for (let k = 0; k < projectsInfo.length; k += 1) {
   // Get project button by id then add listener according to id
-  const openPopupId = document.getElementById(k.toString());
+  const openPopupId = document.getElementsByClassName('seeBtn')[k];
   openPopupId.addEventListener('click', () => {
     openPopup(k);
   });
