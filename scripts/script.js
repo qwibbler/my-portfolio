@@ -14,6 +14,7 @@ function openNav() {
     for (let i = 0; i < items.length; i += 1) {
       items[i].style.display = 'flex';
     }
+    document.body.style.overflowY = 'hidden';
   }
 }
 
@@ -28,6 +29,7 @@ function closeNav() {
     for (let i = 0; i < items.length; i += 1) {
       items[i].style.display = 'none';
     }
+    document.body.style.overflowY = 'auto';
   }
 }
 
@@ -48,6 +50,8 @@ const projectsInfo = [
     imgCard: "url('../images/Img-Plaholder-project.png')",
     imgDesk: 'images/Snapshoot-Portfolio-med.jpg',
     imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
+    live: '#',
+    source: '#',
   },
   {
     title: 'Multi-Post Stories Gain+Glory 2',
@@ -56,6 +60,8 @@ const projectsInfo = [
     imgCard: "url('../images/Img-Plaholder-project.png')",
     imgDesk: 'images/Snapshoot-Portfolio-med.jpg',
     imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
+    live: '#',
+    source: '#',
   },
   {
     title: 'Multi-Post Stories Gain+Glory 3',
@@ -64,6 +70,8 @@ const projectsInfo = [
     imgCard: "url('../images/Img-Plaholder-project.png')",
     imgDesk: 'images/Snapshoot-Portfolio-med.jpg',
     imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
+    live: '#',
+    source: '#',
   },
   {
     title: 'Multi-Post Stories Gain+Glory 4',
@@ -72,6 +80,8 @@ const projectsInfo = [
     imgCard: "url('../images/Img-Plaholder-project.png')",
     imgDesk: 'images/Snapshoot-Portfolio-med.jpg',
     imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
+    live: '#',
+    source: '#',
   },
   {
     title: 'Multi-Post Stories Gain+Glory 5',
@@ -80,6 +90,8 @@ const projectsInfo = [
     imgCard: "url('../images/Img-Plaholder-project.png')",
     imgDesk: 'images/Snapshoot-Portfolio-med.jpg',
     imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
+    live: '#',
+    source: '#',
   },
   {
     title: 'Multi-Post Stories Gain+Glory 6',
@@ -88,6 +100,8 @@ const projectsInfo = [
     imgCard: "url('../images/Img-Plaholder-project.png')",
     imgDesk: 'images/Snapshoot-Portfolio-med.jpg',
     imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
+    live: '#',
+    source: '#',
   },
 ];
 
@@ -97,6 +111,8 @@ for (let i = 0; i < projectsInfo.length; i += 1) {
   projWrapper.className = 'proj';
   projWrapper.style.backgroundImage = projectsInfo[i].imgCard;
   document.getElementById('projects').appendChild(projWrapper);
+
+  // create text part
   const textDiv = document.createElement('div');
   textDiv.className = 'proj-text';
   projWrapper.appendChild(textDiv);
@@ -121,7 +137,8 @@ for (let i = 0; i < projectsInfo.length; i += 1) {
   const seeBtn = document.createElement('button');
   seeBtn.innerHTML = 'See Project';
   textDiv.appendChild(seeBtn);
-  seeBtn.setAttribute('id', i.toString());
+  seeBtn.className = 'seeBtn';
+  seeBtn.id = i.toString();
 }
 
 // popup window
@@ -129,6 +146,7 @@ const popupWrapper = document.getElementById('popupWrapper');
 
 function closepopup() {
   popupWrapper.innerHTML = '';
+  document.body.style.overflowY = 'auto';
 }
 
 function openPopup(id = 0) {
@@ -186,17 +204,31 @@ function openPopup(id = 0) {
   const popupSeeButton = document.createElement('div');
   popupcard.appendChild(popupSeeButton);
   popupSeeButton.className = 'proj_see';
+
+  // live
   const liveButton = document.createElement('button');
   popupSeeButton.appendChild(liveButton);
   liveButton.innerHTML = 'See live <img src="images/Live.svg" alt="">';
+
+  // src
   const srcButton = document.createElement('button');
   popupSeeButton.appendChild(srcButton);
   srcButton.innerHTML = 'See Source <img src="images/live-github.svg"alt="">';
+
+  // disable page scroll
+  document.body.style.overflowY = 'hidden';
 }
 
 for (let k = 0; k < projectsInfo.length; k += 1) {
-  const openPopupId = document.getElementById(k.toString());
+  // Get project button by id then add listener according to id
+  const openPopupId = document.getElementsByClassName('seeBtn')[k];
   openPopupId.addEventListener('click', () => {
+    openPopup(k);
+  });
+
+  // maybe make the whole project clickable?
+  const openWrapper = document.getElementsByClassName('proj')[k];
+  openWrapper.addEventListener('click', () => {
     openPopup(k);
   });
 }
@@ -253,10 +285,12 @@ form.addEventListener('change', upDateValue);
 
 // Get stored values and fill them in
 function loadData() {
-  const savedData = JSON.parse(localStorage.getItem('formData'));
-  uName.value = savedData.name;
-  uMail.value = savedData.email;
-  uMsg.value = savedData.comment;
+  if (localStorage.getItem('formData') !== null) {
+    const savedData = JSON.parse(localStorage.getItem('formData'));
+    uName.value = savedData.name;
+    uMail.value = savedData.email;
+    uMsg.value = savedData.comment;
+  }
 }
 // Run the loader on window start
 window.onload = loadData;
