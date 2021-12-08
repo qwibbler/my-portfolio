@@ -358,6 +358,8 @@ button:active {
   flex-direction: column;
   width: 329px;
   height: 476px;
+  border-radius: 12px;
+  border: 1px solid lightgrey;
   background-repeat: no-repeat;
   background-position: top;
   background-size: contain;
@@ -373,6 +375,7 @@ button:active {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   height: 222px;
   background-color: white;
   border-radius: 8px;
@@ -398,7 +401,7 @@ button:active {
 .proj-text ul {
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .proj-text ul:hover {
@@ -407,6 +410,7 @@ button:active {
 
 .proj-text li {
   padding: 8px 12px;
+  margin: 2px;
   background: #ebf0ee;
   border-radius: 4px;
   font-weight: 600;
@@ -415,6 +419,10 @@ button:active {
   letter-spacing: 0.03em;
   color: #3a4a42;
   transition: scale ease-in-out 0.1s;
+}
+
+.proj-text button {
+  margin-bottom: 8px;
 }
 
 /* ***POPUP*** */
@@ -527,6 +535,10 @@ button:active {
   justify-content: space-around;
   min-width: 141px;
   margin: 0 6px 20px 6px;
+}
+
+.proj_see a {
+  color: #fff;
 }
 
 .proj_see img {
