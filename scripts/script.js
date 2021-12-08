@@ -44,24 +44,24 @@ for (let i = 0; i < items.length; i += 1) {
 // POPUP //
 const projectsInfo = [
   {
-    title: 'Multi-Post Stories Gain+Glory 1',
-    desc: "1 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    langs: ['Ruby on rails', 'CSS', 'Javascript', 'HTML'],
-    imgCard: "url('../images/Img-Plaholder-project.png')",
-    imgDesk: 'images/Snapshoot-Portfolio-med.jpg',
-    imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
-    live: '#',
-    source: '#',
+    title: 'Iqbal Day Poetry Festival',
+    desc: "This is a demo website for a poetry festival held in honor of Pakistan's national poet, a man of deep thought and beautiful verse.",
+    langs: ['Html', 'Css', 'Javascript'],
+    imgCard: 'url("../images/projects/iqbal-day-card.png")',
+    imgDesk: 'images/projects/iqbal-day-desk.png',
+    imgPopup: 'images/projects/iqbal-day-mob.png',
+    live: 'https://qwibbler.github.io/Capstone-Portal/',
+    source: 'https://github.com/qwibbler/Capstone-Portal',
   },
   {
-    title: 'Multi-Post Stories Gain+Glory 2',
-    desc: "2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    langs: ['Ruby on rails', 'CSS', 'Javascript', 'HTML'],
-    imgCard: "url('../images/Img-Plaholder-project.png')",
-    imgDesk: 'images/Snapshoot-Portfolio-med.jpg',
-    imgPopup: 'images/Snapshoot-Portfolio-components.jpg',
-    live: '#',
-    source: '#',
+    title: 'To Do List',
+    desc: 'Create your own personal list of all the things you have yet to do.',
+    langs: ['HTML', 'CSS', 'Javascript'],
+    imgCard: 'url("../images/projects/todo-card.png")',
+    imgDesk: 'images/projects/todo-desk.png',
+    imgPopup: 'images/projects/todo-mob.png',
+    live: 'https://qwibbler.github.io/todo-list/',
+    source: 'https://github.com/qwibbler/todo-list',
   },
   {
     title: 'Multi-Post Stories Gain+Glory 3',
@@ -208,12 +208,12 @@ function openPopup(id = 0) {
   // live
   const liveButton = document.createElement('button');
   popupSeeButton.appendChild(liveButton);
-  liveButton.innerHTML = 'See live <img src="images/Live.svg" alt="">';
+  liveButton.innerHTML = `<a href="${projectsInfo[id].live}">See live <img src="images/Live.svg" alt=""></a>`;
 
   // src
   const srcButton = document.createElement('button');
   popupSeeButton.appendChild(srcButton);
-  srcButton.innerHTML = 'See Source <img src="images/live-github.svg"alt="">';
+  srcButton.innerHTML = `<a href="${projectsInfo[id].source}">See Source <img src="images/live-github.svg"alt=""></a>`;
 
   // disable page scroll
   document.body.style.overflowY = 'hidden';
