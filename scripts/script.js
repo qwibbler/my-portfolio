@@ -45,10 +45,8 @@ for (let i = 0; i < items.length; i += 1) {
 const projectsInfo = [
   {
     title: 'Iqbal Day Poetry Festival',
-    desc: "This is a demo website for a poetry festival held in \
-    honor of Pakistan's national poet, a man of deep thought and \
-    beautiful verse.",
-    langs: ['Html', 'Css', 'Javascript',],
+    desc: "This is a demo website for a poetry festival held in honor of Pakistan's national poet, a man of deep thought and beautiful verse.",
+    langs: ['Html', 'Css', 'Javascript'],
     imgCard: "url('../images/projects/iqbal-day-card.png')",
     imgDesk: 'images/projects/iqbal-day-desk.png',
     imgPopup: 'images/projects/iqbal-day-mob.png',
@@ -59,7 +57,7 @@ const projectsInfo = [
     title: 'To Do List',
     desc: "Create your own personal list of all the things you have yet to do.",
     langs: ['HTML', 'CSS', 'Javascript'],
-    imgCard: "url('../images/projects/todo-card.png')",
+    imgCard: `url('../images/projects/todo-card.png')`,
     imgDesk: 'images/projects/todo-desk.png',
     imgPopup: 'images/projects/todo-mob.png',
     live: 'https://qwibbler.github.io/todo-list/',

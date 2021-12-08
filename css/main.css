@@ -270,12 +270,12 @@ button:active {
   display: flex;
 }
 
-.nav-bar-bot a {
+.s-link {
   display: flex;
   align-items: center;
 }
 
-.nav-bar-bot a:hover {
+.s-link:hover {
   animation: bounce 1.2s ease-in-out infinite;
 }
 
