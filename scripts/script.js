@@ -45,7 +45,7 @@ for (let i = 0; i < items.length; i += 1) {
 const projectsInfo = [
   {
     title: 'Concierge',
-    desc: "A website to let you book a ticket to any number of events. You can create the event in question, or book the dates you’d like to go.",
+    desc: 'A website to let you book a ticket to any number of events. You can create the event in question, or book the dates you’d like to go.',
     langs: ['Ruby on rails', 'React', 'Redux'],
     imgCard: "url('./images/projects/concierge-card.png')",
     imgDesk: 'images/projects/concierge-desk.png',
@@ -55,7 +55,7 @@ const projectsInfo = [
   },
   {
     title: 'TV Shows Catalogue',
-    desc: "This is a catalog of all TV Shows culled from the free API TV Maze, where you can like and comment on all your favorite shows. ",
+    desc: 'This is a catalog of all TV Shows culled from the free API TV Maze, where you can like and comment on all your favorite shows.',
     langs: ['HTML', 'CSS', 'Javascript', 'Webpack'],
     imgCard: "url('./images/projects/tv-card.png')",
     imgDesk: 'images/projects/tv-desk.png',
@@ -65,7 +65,7 @@ const projectsInfo = [
   },
   {
     title: 'EconoMe',
-    desc: "A budgeting app, where you can put in your daily expenditure, sort it into categories, and then see the breakdown of the expenditures per category.",
+    desc: 'A budgeting app, where you can put in your daily expenditure, sort it into categories, and then see the breakdown of the expenditures per category.',
     langs: ['Ruby', 'Rails'],
     imgCard: "url('./images/projects/econome-card.png')",
     imgDesk: 'images/projects/econome-desk.png',
