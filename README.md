@@ -26,7 +26,7 @@
 
 - GitHub: [@qwibbler](https://github.com/qwibbler)
 - Twitter: [@hmemaz](https://twitter.com/hmemaz)
-- LinkedIn: [Humaira Zaman](https://www.linkedin.com/in/hmemaz1994/)
+- LinkedIn: [Humaira Zaman]( www.linkedin.com/in/humaira-zaman)
 
 ### With help from
 
