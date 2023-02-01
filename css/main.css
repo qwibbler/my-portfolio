@@ -70,6 +70,10 @@ button:active {
   background-color: #008552;
 }
 
+button > a {
+  color: white;
+}
+
 /*
   ***NAVBAR***
 */
